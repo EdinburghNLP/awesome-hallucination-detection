@@ -42,7 +42,7 @@
 - **Metrics:** FeQA, a faithfulness metric; Critic, a hallucination critic; BLEU.
 - **Datasets:** OpenDialKG, a dataset that provides open-ended dialogue responses grounded on paths from a KG.
 
-### [HaluEval: A Large-Scale Hallucination Evaluation Benchmark](https://arxiv.org/abs/2305.11747)
+### [HaluEval: A Large-Scale Hallucination Evaluation Benchmark](https://arxiv.org/abs/2305.11747)
 - **Metrics:** Accuracy: QA, Dialogue, Summarisation.
 - **Datasets:** HaluEval, a collection of generated and human-annotated hallucinated samples for evaluating the performane of LLMs in recognising hallucinations.
 
