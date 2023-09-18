@@ -46,6 +46,10 @@
 - **Metrics:** Accuracy: QA, Dialogue, Summarisation.
 - **Datasets:** HaluEval, a collection of generated and human-annotated hallucinated samples for evaluating the performane of LLMs in recognising hallucinations.
 
+### [Self-contradictory Hallucinations of Large Language Models: Evaluation, Detection and Mitigation](https://arxiv.org/abs/2305.15852)
+- **Metrics:** After generating sentence pairs, it measures precision, recall, and F1 score in detection tasks.
+- **Datasets:** 12 selected topics from Wikipedia.
+
 ## Taxonomies
 
 [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629) classifies metrics in *Statistical* (ROUGE, BLEU, PARENT, Knowledge F1, ..) and *Model-based* metrics. The latter are further structured in the following classes:
