@@ -18,17 +18,9 @@
 - **Metrics:** Generation: Perplexity, Unigram Overlap (F1), BLEU-4, ROUGE-L. Overlap between generation and knowledge on which the human grounded during dataset collection: Knowledge F1; only consider words that are infrequent in the dataset when calculating F1: Rare F1.
 - **Datasets:** Wow, CMU Document Grounded Conversations (CMU_DoG). Knowledge source: KiLT Wikipedia dump.
 
-### [Just Ask for Calibration](https://arxiv.org/abs/2305.14975)
-- **Metrics:**
-- **Datasets:**
-
-### [Possible Title: ACL 2023](https://arxiv.org/abs/2212.10511)
-- **Metrics:**
-- **Datasets:**
-
-### [Trusting Your Evidence:](https://arxiv.org/abs/2305.14739)
-- **Metrics:**
-- **Datasets:**
+### [Just Ask for Calibration: Strategies for Eliciting Calibrated Confidence Scores from Language Models Fine-Tuned with Human Feedback](https://arxiv.org/abs/2305.14975)
+- **Metrics:** Expected Calibration Error (ECE) with temperature scaling (ECE-t); accuracy@coverage and coverage@accuracy.
+- **Datasets:** Question Answering datasets assessing factual knowledge: TriviaQA, SciQ, TruthfulQA.
 
 ### [How Language Model Hallucinations Can Snowball](https://arxiv.org/abs/2305.13534)
 - **Metrics:** Percentage of Wrong Answers (Hallucinations) and cases where "the model knows it's wrong" (Snowballed Hallucinations).
