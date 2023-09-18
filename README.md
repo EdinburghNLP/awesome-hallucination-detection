@@ -18,27 +18,27 @@
 - **Metrics:** Generation: Perplexity, Unigram Overlap (F1), BLEU-4, ROUGE-L. Overlap between generation and knowledge on which the human grounded during dataset collection: Knowledge F1; only consider words that are infrequent in the dataset when calculating F1: Rare F1.
 - **Datasets:** Wow, CMU Document Grounded Conversations (CMU_DoG). Knowledge source: KiLT Wikipedia dump.
 
-### 2. [Just Ask for Calibration](https://arxiv.org/abs/2305.14975)
-- **Metrics:** Evaluation of confidence scores from LLMs; average accuracy based on confidence score ranges; calibration measured using multiple metrics including ECE.
-- **Datasets:** SciQ science question-answering dataset; TruthfulQA for testing common misconceptions; TriviaQA for reading comprehension.
+### [Just Ask for Calibration](https://arxiv.org/abs/2305.14975)
+- **Metrics:**
+- **Datasets:**
 
-### 3. [[Possible Title: ACL 2023]](https://arxiv.org/abs/2212.10511)
-- **Metrics:** Wikipedia page views for popularity; QA accuracy on open-domain benchmarks.
-- **Datasets:** New dataset POPQA with 14k questions on long-tail entities; EntityQuestions and Natural Questions datasets.
+### [Possible Title: ACL 2023](https://arxiv.org/abs/2212.10511)
+- **Metrics:**
+- **Datasets:**
 
-### 4. [Trusting Your Evidence:](https://arxiv.org/abs/2305.14739)
-- **Metrics:** BERT-Precision for factual summary consistency; Exact Match for QA tasks.
-- **Datasets:** LLaMA-30B for knowledge conflicts QA; NQ-Swap based on Natural Questions.
+### [Trusting Your Evidence:](https://arxiv.org/abs/2305.14739)
+- **Metrics:**
+- **Datasets:**
 
-### 5. [How Language Model Hallucinations Can Snowball](https://arxiv.org/abs/2305.13534)
+### [How Language Model Hallucinations Can Snowball](https://arxiv.org/abs/2305.13534)
 - **Metrics:** Percentage of Wrong Answers (Hallucinations) and cases where "the model knows it's wrong" (Snowballed Hallucinations).
 - **Datasets:** Primality Testing, Senator Search, Graph Connectivity.
 
-### 6. [Improving Language Models with](https://arxiv.org/abs/2305.14718)
-- **Metrics:** Use of reinforcement learning to measure LM's desired behavior without intensive data manipulation; BERT-Precision for factual summary consistency.
-- **Datasets:** Chatbot corpus of comment pairs; Wizard of Wikipedia (WoW) dataset and its FaithDial version.
+### [Improving Language Models with Advantage-based Offline Policy Gradients](https://arxiv.org/abs/2305.14718)
+- **Metrics:** Faithfulness evaluation for Knowledge-Grounded response generation on FaithDial -- FaithCritic, CoLA (Fluency), Dialog Engagement, Length-penalised TF-IDF Diversity. 
+- **Datasets:** Faithful Knowledge-Grounded Dialog: FaithDial, a more faithgul subset of WoW.
 
-### 7. [Generating with Confidence: Uncertainty](https://arxiv.org/abs/2305.19187)
-- **Metrics:** Metric for average semantic dispersion; Importance of reliable uncertainty measure; Need for informative confidence/uncertainty metric.
-- **Datasets:** CoQA for open-book conversational QA; TriviaQA and Natural Questions (NQ) for closed-book QA.
+### [Generating with Confidence: Uncertainty Quantification for Black-box Large Language Models](https://arxiv.org/abs/2305.19187)
+- **Metrics:**
+- **Datasets:**
 
