@@ -78,6 +78,10 @@
 - **Metrics:** Precision and Recall when detecting Sentence-level and Concept-level Hallucinations.
 - **Datasets:** ChatGPT-generated paragraphs spanning 150 topics from diverse domains.
 
+### [Sources of Hallucination by Large Language Models on Inference Tasks](https://arxiv.org/abs/2305.14552)
+- **Metrics:** Directional Levy/Holt precision and recall with entity insertions and replacements.
+- **Datasets:** Levy/Holt dataset, containing premise-hypothesis pairs with a task formatted as *Given [premise P], is it true that [hypothesis H]?*, where the model is evaluated with random premises.
+
 ## Taxonomies
 
 [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629) classifies metrics in *Statistical* (ROUGE, BLEU, PARENT, Knowledge F1, ..) and *Model-based* metrics. The latter are further structured in the following classes:
