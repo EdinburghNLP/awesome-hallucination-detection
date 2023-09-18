@@ -62,6 +62,10 @@
 - **Metrics:** Sentence-level Hallucination Detection (AUC-PR), and Passage-level Hallucination Detection (Pearson and Spearman's correlation coefficients).
 - **Datasets:** Generated Wikipedia articles from WikiBio, with annotated hallucinations.
 
+### [The Internal State of an LLM Knows When its Lying](https://arxiv.org/abs/2304.13734)
+- **Metrics:** Per-topic and average accuracy.
+- **Datasets:** The True-False Dataset containing true and false statements covering several topics -- Cities, Inventions, Chemical Elements, Animals, Companies, and Scientific Facts.
+
 ## Taxonomies
 
 [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629) classifies metrics in *Statistical* (ROUGE, BLEU, PARENT, Knowledge F1, ..) and *Model-based* metrics. The latter are further structured in the following classes:
