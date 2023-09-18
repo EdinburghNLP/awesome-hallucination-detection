@@ -37,3 +37,14 @@
 ### [FaithDial: A Faithful Benchmark for Information-Seeking Dialogue](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00529/114373/FaithDial-A-Faithful-Benchmark-for-Information)
 - **Metrics:** Metrics measure either the degree of hallucination of generated responses wrt to some given knowledge, or their overlap with gold faithful responses: Critic, Q² (F1, NLI), BERTScore, F1, BLEU, ROUGE.
 - **Datasets:** FaithDial, WoW.
+
+### [Neural Path Hunter: Reducing Hallucination in Dialogue Systems via Path Grounding](https://arxiv.org/abs/2104.08455)
+- **Metrics:** FeQA, a faithfulness metric; Critic, a hallucination critic; BLEU.
+- **Datasets:** OpenDialKG, a dataset that provides open-ended dialogue responses grounded on paths from a KG.
+
+## Definitions and Notes
+
+### Extrinsic and Intrinsic Hallucinations
+
+[Neural Path Hunter](https://arxiv.org/abs/2104.08455) defines as *extrinsic hallucination* as an utterance that brings a new span of text that does not correspond
+to a valid triple in a KG, and as *intrinsic hallucination* as an utterance that misuses either the subject or object in a KG triple such that there is no direct path between the two entities. [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629) defines as *extrinsic hallucination* a case where  the generated output that cannot be verified from the source content, and as an *intrinsic hallucination* a case where the generated output contradicts the source content.
