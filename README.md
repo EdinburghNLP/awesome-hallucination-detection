@@ -2,9 +2,21 @@
 
 ## Papers and Summaries
 
-### 1. [Elastic Weight Removal for Faithful and Abstractive Dialogue Generation](https://arxiv.org/abs/2303.17574)
-- **Metrics:** Evaluation shows EWR increases faithfulness; Fisher Information Matrix (FIM) used for parameter importance.
-- **Datasets:** Synthetic dataset for anti-expert training; WoW dataset subset annotated with the BEGIN framework.
+### [Elastic Weight Removal for Faithful and Abstractive Dialogue Generation](https://arxiv.org/abs/2303.17574)
+- **Metrics:** Faithfulness between predicted response and ground-truth knowledge (Tab. 1) -- Critic, Q², BERT F1, F1.
+- **Datasets:** Wizard-of-Wikipedia (WoW), the DSTC9 and DSTC11 extensions of MultiWoZ 2.1, FaithDial -- a de-hallucinated subset of WoW.
+
+### [Trusting Your Evidence: Hallucinate Less with Context-aware Decoding](https://arxiv.org/abs/2305.14739)
+- **Metrics:** Factual consistency of summaries: BERT-Precision and FactKB. MemoTrap and NQ-Swap: Exact Match.
+- **Datasets:** Summarisation: CNN-DM, XSUM. Knowledge Conflicts: MemoTrap, NQ-Swap.
+
+### [When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Parametric Memories](https://arxiv.org/2212.10511)
+- **Metrics:** Exact Match/Accuracy.
+- **Datasets:** QA datasets with long-tail entities: PopQA, EntityQuestions; NQ.
+
+### [Retrieval Augmentation Reduces Hallucination in Conversation](https://arxiv.org/2104.10511)
+- **Metrics:** Generation: Perplexity, Unigram Overlap (F1), BLEU-4, ROUGE-L. Overlap between generation and knowledge on which the human grounded during dataset collection: Knowledge F1; only consider words that are infrequent in the dataset when calculating F1: Rare F1.
+- **Datasets:** Wow, CMU Document Grounded Conversations (CMU_DoG). Knowledge source: KiLT Wikipedia dump.
 
 ### 2. [Just Ask for Calibration](https://arxiv.org/abs/2305.14975)
 - **Metrics:** Evaluation of confidence scores from LLMs; average accuracy based on confidence score ranges; calibration measured using multiple metrics including ECE.
@@ -19,8 +31,8 @@
 - **Datasets:** LLaMA-30B for knowledge conflicts QA; NQ-Swap based on Natural Questions.
 
 ### 5. [How Language Model Hallucinations Can Snowball](https://arxiv.org/abs/2305.13534)
-- **Metrics:** Evaluation of model accuracy, especially under faulty context conditions.
-- **Datasets:** Primality testing dataset; examples include Senator Search and others.
+- **Metrics:** Percentage of Wrong Answers (Hallucinations) and cases where "the model knows it's wrong" (Snowballed Hallucinations).
+- **Datasets:** Primality Testing, Senator Search, Graph Connectivity.
 
 ### 6. [Improving Language Models with](https://arxiv.org/abs/2305.14718)
 - **Metrics:** Use of reinforcement learning to measure LM's desired behavior without intensive data manipulation; BERT-Precision for factual summary consistency.
