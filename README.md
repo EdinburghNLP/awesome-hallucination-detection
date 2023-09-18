@@ -2,7 +2,7 @@
 
 ## Papers and Summaries
 
-### [Elastic Weight Removal for Faithful and Abstractive Dialogue Generation](https://arxiv.org/abs/2303.17574)
+### Paper: [Elastic Weight Removal for Faithful and Abstractive Dialogue Generation](https://arxiv.org/abs/2303.17574)
 - **Metrics:** Faithfulness between predicted response and ground-truth knowledge (Tab. 1) -- Critic, Q², BERT F1, F1.
 - **Datasets:** Wizard-of-Wikipedia (WoW), the DSTC9 and DSTC11 extensions of MultiWoZ 2.1, FaithDial -- a de-hallucinated subset of WoW.
 
@@ -41,6 +41,14 @@
 ### [Neural Path Hunter: Reducing Hallucination in Dialogue Systems via Path Grounding](https://arxiv.org/abs/2104.08455)
 - **Metrics:** FeQA, a faithfulness metric; Critic, a hallucination critic; BLEU.
 - **Datasets:** OpenDialKG, a dataset that provides open-ended dialogue responses grounded on paths from a KG.
+
+## Taxonomies
+
+[Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629) classifies metrics in *Statistical* (ROUGE, BLEU, PARENT, Knowledge F1, ..) and *Model-based* metrics. The latter are further structured in the following classes:
+- **Information-Extraction (IE)-based**: retrieve answer from a knowledge source and compare it with the generated answer -- there might be problems due to the error propagation from the IE model.
+- **QA-based**: measure the overlap/consistency between generation and source reference, based on the intuition that similar answers will be generated from the same question if the generation is factually consistent with the source reference. Used to evaluate hallucinations in summarisation, dialogue, and data2text generation. Composed by a *question generation* model and a *question answering* model.
+- **Natural Language Inference (NLI)-based**: based on the idea that only thr source knowledge reference should entail the entirety of the information in faithful and hallucination-free generation.
+
 
 ## Definitions and Notes
 
