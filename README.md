@@ -39,6 +39,6 @@
 - **Datasets:** Faithful Knowledge-Grounded Dialog: FaithDial, a more faithgul subset of WoW.
 
 ### [Generating with Confidence: Uncertainty Quantification for Black-box Large Language Models](https://arxiv.org/abs/2305.19187)
-- **Metrics:**
-- **Datasets:**
+- **Metrics:** AUROC, AUARC, Uncertainty and Confidence metrics (NumSet, Deg, EigV).
+- **Datasets:** CoQA (Open-book Conversational QA dataset), TriviaQA and Natural Questions (Closed-book QA).
 
