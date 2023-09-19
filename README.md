@@ -28,14 +28,14 @@
 
 ### [Improving Language Models with Advantage-based Offline Policy Gradients](https://arxiv.org/abs/2305.14718)
 - **Metrics:** Faithfulness evaluation for Knowledge-Grounded response generation on FaithDial -- FaithCritic, CoLA (Fluency), Dialog Engagement, Length-penalised TF-IDF Diversity. 
-- **Datasets:** Faithful Knowledge-Grounded Dialog: FaithDial, a more faithgul subset of WoW.
+- **Datasets:** Faithful Knowledge-Grounded Dialog: FaithDial, a more faithful subset of WoW.
 
 ### [Generating with Confidence: Uncertainty Quantification for Black-box Large Language Models](https://arxiv.org/abs/2305.19187)
 - **Metrics:** AUROC, AUARC, Uncertainty and Confidence metrics (NumSet, Deg, EigV).
 - **Datasets:** CoQA (Open-book Conversational QA dataset), TriviaQA and Natural Questions (Closed-book QA).
 
 ### [FaithDial: A Faithful Benchmark for Information-Seeking Dialogue](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00529/114373/FaithDial-A-Faithful-Benchmark-for-Information)
-- **Metrics:** Metrics measure either the degree of hallucination of generated responses wrt to some given knowledge, or their overlap with gold faithful responses: Critic, Q² (F1, NLI), BERTScore, F1, BLEU, ROUGE.
+- **Metrics:** Metrics measure either the degree of hallucination of generated responses wrt to some given knowledge or their overlap with gold faithful responses: Critic, Q² (F1, NLI), BERTScore, F1, BLEU, ROUGE.
 - **Datasets:** FaithDial, WoW.
 
 ### [Neural Path Hunter: Reducing Hallucination in Dialogue Systems via Path Grounding](https://arxiv.org/abs/2104.08455)
@@ -44,14 +44,14 @@
 
 ### [HaluEval: A Large-Scale Hallucination Evaluation Benchmark](https://arxiv.org/abs/2305.11747)
 - **Metrics:** Accuracy: QA, Dialogue, Summarisation.
-- **Datasets:** HaluEval, a collection of generated and human-annotated hallucinated samples for evaluating the performane of LLMs in recognising hallucinations.
+- **Datasets:** HaluEval, a collection of generated and human-annotated hallucinated samples for evaluating the performance of LLMs in recognising hallucinations.
 
 ### [Self-contradictory Hallucinations of Large Language Models: Evaluation, Detection and Mitigation](https://arxiv.org/abs/2305.15852)
 - **Metrics:** After generating sentence pairs, it measures precision, recall, and F1 score in detection tasks.
 - **Datasets:** 12 selected topics from Wikipedia.
 
 ### [Mitigating Language Model Hallucination with Interactive Question-Knowledge Alignment](https://arxiv.org/abs/2305.13669)
-- **Metrics:** *Coverage*: a binary metric that determines whether all the correct gold answer values are included in the generated value. *Hallucination*: a binary indicator that assesses the presence of generated values that do not exist in the question values and gold grounding values. *User Simulator*: user simulator as an "oracle" language model that has access to attribution information about the target answer.
+- **Metrics:** *Coverage*: a binary metric that determines whether all the correct gold answer values are included in the generated value. *Hallucination*: a binary indicator that assesses the presence of generated values that do not exist in the question values and gold grounding values. *User Simulator*: user simulator as an "oracle" language model with access to attribution information about the target answer.
 - **Datasets:** FuzzyQA, a dataset based on HybridDialogue and MuSiQue where complex questions were simplified using ChatGPT.
 
 ### [Check Your Facts and Try Again: Improving Large Language Models with External Knowledge and Automated Feedback](https://arxiv.org/abs/2302.12813)
@@ -62,9 +62,9 @@
 - **Metrics:** Sentence-level Hallucination Detection (AUC-PR), and Passage-level Hallucination Detection (Pearson and Spearman's correlation coefficients).
 - **Datasets:** Generated Wikipedia articles from WikiBio, with annotated hallucinations.
 
-### [The Internal State of an LLM Knows When its Lying](https://arxiv.org/abs/2304.13734)
+### [The Internal State of an LLM Knows When it's Lying](https://arxiv.org/abs/2304.13734)
 - **Metrics:** Per-topic and average accuracy.
-- **Datasets:** The True-False Dataset containing true and false statements covering several topics -- Cities, Inventions, Chemical Elements, Animals, Companies, and Scientific Facts.
+- **Datasets:** The True-False Dataset contains true and false statements covering several topics -- Cities, Inventions, Chemical Elements, Animals, Companies, and Scientific Facts.
 
 ### [Chain of Knowledge: A Framework for Grounding Large Language Models with Structured Knowledge Bases](https://arxiv.org/abs/2305.13269)
 - **Metrics:** Exact Match.
@@ -83,7 +83,7 @@
 - **Datasets:** Levy/Holt dataset, containing premise-hypothesis pairs with a task formatted as *Given [premise P], is it true that [hypothesis H]?*, where the model is evaluated with random premises.
 
 ### [Hallucinations in Large Multilingual Translation Models](https://arxiv.org/abs/2303.16104)
-- **Metrics:** Rate to which MT system produce hallucinations under perturbation (Language Pair fraction, rate).
+- **Metrics:** Rate to which MT system produces hallucinations under perturbation (Language Pair fraction, rate).
 - **Datasets:** Flores-101, WMT, TICO.
 
 ### [Citation: A Key to Building Responsible and Accountable Large Language Models](https://arxiv.org/abs/2307.02185)
@@ -92,11 +92,11 @@
 
 ### [Zero-Resource Hallucination Prevention for Large Language Models](https://arxiv.org/abs/2309.02654)
 - **Metrics:** Hallucinatory instruction classification: AUC, ACC, F1, PEA.
-- **Datasets:** Concept-7, which focuses on the classification of potential hallucinatory instructions.
+- **Datasets:** Concept-7, which focuses on classifying potential hallucinatory instructions.
 
 ### [RARR: Researching and Revising What Language Models Say, Using Language Models](https://arxiv.org/abs/2210.08726)
 - **Metrics:** Attributable to Identified Sources (AIS) scores before and after editing.
-- **Datasets:** Generated statements by creating task inputss from three datasets, and prompting different models to produce long-form outputs which may contain hallucinations -- Factoid statements, Reasoning chains, Knowledge-intensive dialogs.
+- **Datasets:** Generated statements by creating task inputs from three datasets and prompting different models to produce long-form outputs which may contain hallucinations -- Factoid statements, Reasoning chains, and Knowledge-intensive dialogues.
 
 ## Overviews and Surveys
 
@@ -108,11 +108,11 @@
 ## Taxonomies
 
 [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629) classifies metrics in *Statistical* (ROUGE, BLEU, PARENT, Knowledge F1, ..) and *Model-based* metrics. The latter are further structured in the following classes:
-- **Information-Extraction (IE)-based**: retrieve answer from a knowledge source and compare it with the generated answer -- there might be problems due to the error propagation from the IE model.
-- **QA-based**: measure the overlap/consistency between generation and source reference, based on the intuition that similar answers will be generated from the same question if the generation is factually consistent with the source reference. Used to evaluate hallucinations in summarisation, dialogue, and data2text generation. Composed by a *question generation* model and a *question answering* model.
-- **Natural Language Inference (NLI)-based**: based on the idea that only thr source knowledge reference should entail the entirety of the information in faithful and hallucination-free generation.
+- **Information-Extraction (IE)-based**: retrieve an answer from a knowledge source and compare it with the generated answer -- there might be problems due to the error propagation from the IE model.
+- **QA-based**: measure the overlap/consistency between generation and source reference, based on the intuition that similar answers will be generated from the same question if the generation is factually consistent with the source reference. Used to evaluate hallucinations in summarisation, dialogue, and data2text generation. Composed of a *question generation* model and a *question answering* model.
+- **Natural Language Inference (NLI)-based**: based on the idea that only the source knowledge reference should entail the entirety of the information in faithful and hallucination-free generation.
 
-[A Survey of Hallucination in “Large” Foundation Models](https://arxiv.org/abs/2309.05922) surveys papers flagging them for *detection*, *mitigation*, *tasks*, *datasets*, and *evaluation metrics*. Regarding hallucinations in text, categorises papers by *LLMs*, *Multilingual LLMs*, and *Domain-specific LLMs*.
+[A Survey of Hallucination in “Large” Foundation Models](https://arxiv.org/abs/2309.05922) surveys papers flagging them for *detection*, *mitigation*, *tasks*, *datasets*, and *evaluation metrics*. Regarding hallucinations in text, it categorises papers by *LLMs*, *Multilingual LLMs*, and *Domain-specific LLMs*.
 
 ## Definitions and Notes
 
