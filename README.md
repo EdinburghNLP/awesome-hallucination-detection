@@ -82,6 +82,29 @@
 - **Metrics:** Directional Levy/Holt precision and recall with entity insertions and replacements.
 - **Datasets:** Levy/Holt dataset, containing premise-hypothesis pairs with a task formatted as *Given [premise P], is it true that [hypothesis H]?*, where the model is evaluated with random premises.
 
+### [Hallucinations in Large Multilingual Translation Models](https://arxiv.org/abs/2303.16104)
+- **Metrics:** Rate to which MT system produce hallucinations under perturbation (Language Pair fraction, rate).
+- **Datasets:** Flores-101, WMT, TICO.
+
+### [Citation: A Key to Building Responsible and Accountable Large Language Models](https://arxiv.org/abs/2307.02185)
+- **Metrics:** N/A
+- **Datasets:** N/A
+
+### [Zero-Resource Hallucination Prevention for Large Language Models](https://arxiv.org/abs/2309.02654)
+- **Metrics:** Hallucinatory instruction classification: AUC, ACC, F1, PEA.
+- **Datasets:** Concept-7, which focuses on the classification of potential hallucinatory instructions.
+
+### [RARR: Researching and Revising What Language Models Say, Using Language Models](https://arxiv.org/abs/2210.08726)
+- **Metrics:** Attributable to Identified Sources (AIS) scores before and after editing.
+- **Datasets:** Generated statements by creating task inputss from three datasets, and prompting different models to produce long-form outputs which may contain hallucinations -- Factoid statements, Reasoning chains, Knowledge-intensive dialogs.
+
+## Overviews and Surveys
+
+- [Mitigating LLM Hallucinations: a multifaceted approach](https://amatriain.net/blog/hallucinations)
+- [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629)
+- [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629)
+- [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)
+
 ## Taxonomies
 
 [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629) classifies metrics in *Statistical* (ROUGE, BLEU, PARENT, Knowledge F1, ..) and *Model-based* metrics. The latter are further structured in the following classes:
