@@ -89,6 +89,8 @@
 - **QA-based**: measure the overlap/consistency between generation and source reference, based on the intuition that similar answers will be generated from the same question if the generation is factually consistent with the source reference. Used to evaluate hallucinations in summarisation, dialogue, and data2text generation. Composed by a *question generation* model and a *question answering* model.
 - **Natural Language Inference (NLI)-based**: based on the idea that only thr source knowledge reference should entail the entirety of the information in faithful and hallucination-free generation.
 
+[A Survey of Hallucination in “Large” Foundation Models](https://arxiv.org/abs/2309.05922) surveys papers flagging them for *detection*, *mitigation*, *tasks*, *datasets*, and *evaluation metrics*. Regarding hallucinations in text, categorises papers by *LLMs*, *Multilingual LLMs*, and *Domain-specific LLMs*.
+
 ## Definitions and Notes
 
 ### Extrinsic and Intrinsic Hallucinations
