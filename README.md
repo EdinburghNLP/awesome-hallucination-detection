@@ -102,7 +102,7 @@
 
 - [Mitigating LLM Hallucinations: a multifaceted approach](https://amatriain.net/blog/hallucinations)
 - [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629)
-- [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629)
+- [A Survey of Hallucination in Large Foundation Models](https://arxiv.org/abs/2309.05922)
 - [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)
 
 ## Taxonomies
