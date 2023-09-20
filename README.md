@@ -102,6 +102,11 @@
 - **Metrics:** Q² is a metric itself, and it is compared with F1 token-level overlap, Precision and Recall, Q² w/o NLI, E2E NLI, Overlap, BERTScore, and BLEU.
 - **Datasets:** WoW which contains dialogues in which a bot needs to respond to useri nputs in a knowledgeable way; Topical-Chat, a human-human knowledge-grounded conversation dataset; Dialogue NLI, a dataset based on the Persona-Chat dialogue task consisting of premise-hypothesis pairs.
 
+### [Do We Know What We Don’t Know? Studying Unanswerable Questions beyond SQuAD 2.0](https://aclanthology.org/2021.findings-emnlp.385.pdf)
+- **Metrics:** EM on All, "Has answer", and "IDK"
+- **Datasets:** MNLI, SQuAD 2.0, ACE-whQA
+
+
 ## Overviews and Surveys
 
 - [Mitigating LLM Hallucinations: a multifaceted approach](https://amatriain.net/blog/hallucinations)
