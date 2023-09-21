@@ -104,8 +104,11 @@
 
 ### [Do We Know What We Don’t Know? Studying Unanswerable Questions beyond SQuAD 2.0](https://aclanthology.org/2021.findings-emnlp.385.pdf)
 - **Metrics:** EM on All, "Has answer", and "IDK"
-- **Datasets:** MNLI, SQuAD 2.0, ACE-whQA
+- **Datasets:** MNLI, SQuAD 2.0, ACE-whQA.
 
+### [Chain-of-Verification Reduces Hallucination in Large Language Models](https://arxiv.org/abs/2309.11495)
+- **Metrics:** Wikidata and Wiki-Category List: test precision, average number of positive and negative (hallucination) entities for list-based questions; MultiSpanQA: F1, Precision, Recall; Longform generation of biographies: FactScore.
+- **Datasets:** Wikidata, Wiki-Category List, MultiSpanQA, Longform Generation of Biographies.
 
 ## Overviews and Surveys
 
