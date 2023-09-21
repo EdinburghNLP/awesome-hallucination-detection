@@ -110,6 +110,11 @@
 - **Metrics:** Wikidata and Wiki-Category List: test precision, average number of positive and negative (hallucination) entities for list-based questions; MultiSpanQA: F1, Precision, Recall; Longform generation of biographies: FactScore.
 - **Datasets:** Wikidata, Wiki-Category List, MultiSpanQA, Longform Generation of Biographies.
 
+### [Detecting and Mitigating Hallucinations in Multilingual Summarisation](https://arxiv.org/abs/2305.13632)
+- **Metrics:** mFACT, a novel multilingual faithful metric developed from four English faithfulness metrics: DAE, QAFactEval, ENFS%, and EntFA.
+- **Datasets:** XL-Sum, a multilingual summarisation dataset.
+
+
 ## Overviews and Surveys
 
 - [Mitigating LLM Hallucinations: a multifaceted approach](https://amatriain.net/blog/hallucinations)
