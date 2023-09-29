@@ -134,19 +134,20 @@
 
 ### [Do Language Models Know When They're Hallucinating References?](https://arxiv.org/abs/2305.18248)
 - **Metrics:** Hallucination rate (H%, out of 1000 generated titles)
-- **Datasets:** 
+- **Datasets:** Generated (true and hallucinated) references on topics from the ACM Computing Classification System.
 
 ### [Why Does ChatGPT Fall Short in Providing Truthful Answers?](https://arxiv.org/abs/2304.10513)
-- **Metrics:**
-- **Datasets:** 
+- **Metrics:** #Correct and #Wrong answers, and different type of failure counts: Comprehension, Factualness, Specificity, Inference.
+- **Datasets:** HotpotQA, BoolQ
+- **Comments:** This has a nice taxonomy on different error types -- e.g., *comprehension*, *factualness*, *specifity*, *inference*.
 
 ### [LM vs LM: Detecting Factual Errors via Cross Examination](https://arxiv.org/abs/2305.13281)
-- **Metrics:**
-- **Datasets:** 
+- **Metrics:** Precision, Recall, F1 (under different cross-examination strategies: AYS, IDK, Confidence-Based, IC-IDK)
+- **Datasets:** TriviaQA, NQ, PopQA
 
 ### [RHO (ρ): Reducing Hallucination in Open-domain Dialogues with Knowledge Grounding](https://arxiv.org/abs/2212.01588)
-- **Metrics:**
-- **Datasets:** 
+- **Metrics:** BLEU, ROUGE-L; FeQA, QuestEval, EntityCoverage (Precision, Recall, F1) to estimate the hallucination degree -- FrQA and QuestEval are QA-based metrics for evaluating the faithfulness of the output in the generation task.
+- **Datasets:** OpenDialKG
 
 
 
