@@ -132,12 +132,37 @@
 - **Datasets:** Wiki-FACTOR and News-FACTOR: two novel factuality evaluation benchmarks for LLMs, based on Wikipedia and News articles. Each example consists of a prefix, a factual completion and three similar but non-factual alternatives. An LLM is evaluated by measuring the percentage of examples it assigns the highest probability to the factual completion.
 - **Comments:** The paper introduces a framework for automatically generating such datasets from a given corpus, detailed in Section 3.
 
-## Overviews and Surveys
+### [Do Language Models Know When They're Hallucinating References?](https://arxiv.org/abs/2305.18248)
+- **Metrics:** Hallucination rate (H%, out of 1000 generated titles)
+- **Datasets:** 
+
+### [Why Does ChatGPT Fall Short in Providing Truthful Answers?](https://arxiv.org/abs/2304.10513)
+- **Metrics:**
+- **Datasets:** 
+
+### [LM vs LM: Detecting Factual Errors via Cross Examination](https://arxiv.org/abs/2305.13281)
+- **Metrics:**
+- **Datasets:** 
+
+### [RHO (ρ): Reducing Hallucination in Open-domain Dialogues with Knowledge Grounding](https://arxiv.org/abs/2212.01588)
+- **Metrics:**
+- **Datasets:** 
+
+
+
+### [Med-HALT: Medical Domain Hallucination Test for Large Language Models](https://arxiv.org/abs/2307.15343)
+- **Metrics:**
+- **Datasets:** 
+
+
+## Overviews, Surveys, and Shared Tasks
 
 - [Mitigating LLM Hallucinations: a multifaceted approach](https://amatriain.net/blog/hallucinations)
 - [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629)
 - [A Survey of Hallucination in Large Foundation Models](https://arxiv.org/abs/2309.05922)
 - [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)
+- [SemEval-2024 Task-6 - SHROOM, a Shared-task on Hallucinations and Related Observable Overgeneration Mistakes](https://helsinki-nlp.github.io/shroom/)
+
 
 ## Taxonomies
 
