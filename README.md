@@ -153,7 +153,7 @@
 
 ### [Med-HALT: Medical Domain Hallucination Test for Large Language Models](https://arxiv.org/abs/2307.15343)
 - **Metrics:**
-- **Datasets:** 
+- **Datasets:** Med-HALT
 
 
 ## Overviews, Surveys, and Shared Tasks
