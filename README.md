@@ -129,7 +129,8 @@
 - **Comments:** Fig. 3 outlines several hallucination types (domain-specific knowledge, commonsense knowledge, incoherence or improper collocation, unrelated to central topic, conflict with preceding context, conflict with succeeding context, ..)
 
 ### [Generating Benchmarks for Factuality Evaluation of Language Models](https://arxiv.org/abs/2307.06908)
-- **Datasets:** Wiki-FACTOR and News-FACTOR: two novel factuality evaluation benchmarks for LLMs, based on Wikipedia and News articles. Each example consists of a prefix, a factual completion and three similar but non-factual alternatives. An LLM is evaluated by measuring the percentage of examples it assigns the highest probability to the factual completion.
+- **Metrics:** Percentage of examples it assigns the highest probability to the factual completion.
+- **Datasets:** Wiki-FACTOR and News-FACTOR: two novel factuality evaluation benchmarks for LLMs, based on Wikipedia and News articles. Each example consists of a prefix, a factual completion and three similar but non-factual alternatives.
 - **Comments:** The paper introduces a framework for automatically generating such datasets from a given corpus, detailed in Section 3.
 
 ### [Do Language Models Know When They're Hallucinating References?](https://arxiv.org/abs/2305.18248)
