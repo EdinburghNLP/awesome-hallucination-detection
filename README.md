@@ -152,6 +152,14 @@
 - **Metrics:** BLEU, ROUGE-L; FeQA, QuestEval, EntityCoverage (Precision, Recall, F1) to estimate the hallucination degree -- FrQA and QuestEval are QA-based metrics for evaluating the faithfulness of the output in the generation task.
 - **Datasets:** OpenDialKG
 
+### [FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation](https://arxiv.org/abs/2305.14251)
+- **Metrics:** %Supported statements across varying frequency levels of human entities.
+- **Datasets:** People biographies generated from LLMs, where human annotators break them into supporting facts.
+
+### [ExpertQA: Expert-Curated Questions and Attributed Answers](https://arxiv.org/abs/2309.07852)
+- **Metrics:** zero-shot (P, R, F1) and fine-tuned (P, R, F1) of AutoAIS labels; FActScore F1 scores on reference factuality labels; AutoAIS (Attributable to Identified Sources) scores.
+- **Datasets:** Expert-curated questions across multiple fields (e.g., Anthropology, Architecture, Biology, Chemistry, Engineering & Technology, Healthcare/Medicine; see Tab. 1 for a sample) organised by Question Type (e.g., Directed question with single unambiguous answer, open-ended potentially ambiguous question, summarisation of information of a topic, advice or suggestion on how to approach a problem; see Tab. 2)
+
 
 
 ### [Med-HALT: Medical Domain Hallucination Test for Large Language Models](https://arxiv.org/abs/2307.15343)
