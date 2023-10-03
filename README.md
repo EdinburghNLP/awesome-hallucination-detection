@@ -178,7 +178,7 @@
 - [A Survey of Hallucination in Large Foundation Models](https://arxiv.org/abs/2309.05922)
 - [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)
 - [SemEval-2024 Task-6 - SHROOM, a Shared-task on Hallucinations and Related Observable Overgeneration Mistakes](https://helsinki-nlp.github.io/shroom/)
-
+- [llm-hallucination-survey](https://github.com/HillZhang1999/llm-hallucination-survey)
 
 ## Taxonomies
 
