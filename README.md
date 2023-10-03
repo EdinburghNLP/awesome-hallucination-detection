@@ -160,6 +160,10 @@
 - **Metrics:** zero-shot (P, R, F1) and fine-tuned (P, R, F1) of AutoAIS labels; FActScore F1 scores on reference factuality labels; AutoAIS (Attributable to Identified Sources) scores.
 - **Datasets:** Expert-curated questions across multiple fields (e.g., Anthropology, Architecture, Biology, Chemistry, Engineering & Technology, Healthcare/Medicine; see Tab. 1 for a sample) organised by Question Type (e.g., Directed question with single unambiguous answer, open-ended potentially ambiguous question, summarisation of information of a topic, advice or suggestion on how to approach a problem; see Tab. 2)
 
+### [DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models](https://arxiv.org/abs/2309.03883)
+- **Metrics:** TruthffulQA: MC1, MC2, MC3 scores; FACTOR: News, Wiki; these were multiple-choice results. Open-ended generation: for TruthfulQA, they use %Truth, %Info, %Truth*Info, %Reject; for CoT tasks (StrategyQA and GSM8K) they go with accuracy.
+- **Datasets:** TruthfulQA, FACTOR (news/wiki), StrategyQA, GSM8K
+
 
 
 ### [Med-HALT: Medical Domain Hallucination Test for Large Language Models](https://arxiv.org/abs/2307.15343)
