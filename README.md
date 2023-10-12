@@ -173,6 +173,10 @@
 - **Metrics:** Reasoning Hallucination Tests (False Confidence Tests, None of the Above Tests, Fake Questions Tests), Memory Hallucination Tests (Abstract-to-Link Tests, PMID-to-Title Tests, Title-to-Link Tests, Link-to-Title Tests); Accuracy, Pointwise Score.
 - **Datasets:** Med-HALT: MEDMCQA, Headqa, Medqa USMILE, Medqa (Taiwan), Pubmed.
 
+### [Beyond Factuality: A Comprehensive Evaluation of Large Language Models as Knowledge Generators](https://arxiv.org/abs/2310.07289)
+- **Metrics:** Factuality, Relevance, Coherence, Informativeness, Helpfulness and Validity.
+- **Datasets:** Natural Questions, Wizard of Wikipedia.
+
 
 ## Overviews, Surveys, and Shared Tasks
 
