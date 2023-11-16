@@ -4,6 +4,10 @@
 
 ## Papers and Summaries
 
+### [SAC$`^3`$: Reliable Hallucination Detection in Black-Box Language Models via Semantic-aware Cross-check Consistency](https://arxiv.org/abs/2311.01740)
+- **Metrics:** Accuracy and AUROC: classification QA and open-domain QA
+- **Datasets:** Prime number and senator search from Snowball Hallucination, HotpotQA and Nq-open QA
+
 ### [Elastic Weight Removal for Faithful and Abstractive Dialogue Generation](https://arxiv.org/abs/2303.17574)
 - **Metrics:** Faithfulness between predicted response and ground-truth knowledge (Tab. 1) -- Critic, Q², BERT F1, F1.
 - **Datasets:** Wizard-of-Wikipedia (WoW), the DSTC9 and DSTC11 extensions of MultiWoZ 2.1, FaithDial -- a de-hallucinated subset of WoW.
