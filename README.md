@@ -197,6 +197,18 @@
 
 [A Survey of Hallucination in “Large” Foundation Models](https://arxiv.org/abs/2309.05922) surveys papers flagging them for *detection*, *mitigation*, *tasks*, *datasets*, and *evaluation metrics*. Regarding hallucinations in text, it categorises papers by *LLMs*, *Multilingual LLMs*, and *Domain-specific LLMs*.
 
+## Measuring Hallucinations in LLMs
+- [AnyScale - Llama 2 is about as factually accurate as GPT-4 for summaries and is 30X cheaper](https://www.anyscale.com/blog/llama-2-is-about-as-factually-accurate-as-gpt-4-for-summaries-and-is-30x-cheaper)
+- [Arthur.ai - Hallucination Experiment](https://www.arthur.ai/gap-articles/hallucination-experiment)
+- [Vectara - Cut the Bull…. Detecting Hallucinations in Large Language Models](https://vectara.com/cut-the-bull-detecting-hallucinations-in-large-language-models/)
+- [Vectara LLM Leaderboard](https://github.com/vectara/hallucination-leaderboard)
+
+## Open Source Models for Measuring Hallucinations
+- [AlignScore Code and Model - GutHub](https://github.com/yuh-zha/AlignScore)
+- [Google True Teacher Model - HuggingFace](https://huggingface.co/google/t5_11b_trueteacher_and_anli)
+- [Hallucination Evaluation Model - HuggingFace](https://huggingface.co/vectara/hallucination_evaluation_model)
+- [Summac Code and Model - GitHub](https://github.com/tingofurro/summac)
+
 ## Definitions and Notes
 
 ### Extrinsic and Intrinsic Hallucinations
