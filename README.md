@@ -4,6 +4,14 @@
 
 ## Papers and Summaries
 
+### [TRUE: Re-Evaluating Factual Consistency Evaluation](https://arxiv.org/abs/2204.04991)
+- **Metrics:** AUROC, across multiple datasets and evaluation methods
+- **Datasets:** PAWS, XSum, QAGS, FRANK, SummEval, BEGIN, Q^2, DialFact, FEVER, VitaminC
+
+### [TrueTeacher: Learning Factual Consistency Evaluation with Large Language Models](https://arxiv.org/abs/2305.11171)
+- **Metrics:** AUROC, across multiple datasets and evaluation methods
+- **Datasets:** XSum, QAGS, FRANK, SummEval
+
 ### [SAC$`^3`$: Reliable Hallucination Detection in Black-Box Language Models via Semantic-aware Cross-check Consistency](https://arxiv.org/abs/2311.01740)
 - **Metrics:** Accuracy and AUROC: classification QA and open-domain QA
 - **Datasets:** Prime number and senator search from Snowball Hallucination, HotpotQA and Nq-open QA
