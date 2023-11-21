@@ -4,6 +4,11 @@
 
 ## Papers and Summaries
 
+### [Attention Satisfies: A Constraint-Satisfaction Lens on Factual Errors of Language Models](https://arxiv.org/abs/2309.15098)
+- **Metrics:** AUROC, risk-coverage curve operating points
+- **Datasets:** CounterFact, factual queries generated from Wikidata
+- **Comments:** This paper models factual queries as constraint-satisfaction problems and find that attention to constraint tokens significantly correlates with factual correctness / hallucinations.
+
 ### [TRUE: Re-Evaluating Factual Consistency Evaluation](https://arxiv.org/abs/2204.04991)
 - **Metrics:** AUROC, across multiple datasets and evaluation methods
 - **Datasets:** PAWS, XSum, QAGS, FRANK, SummEval, BEGIN, Q^2, DialFact, FEVER, VitaminC
