@@ -185,15 +185,18 @@
 - **Metrics:** Accuracy (Strict, Relaxed on Fast-changing questions, Slow-changing questions, Never-changing questions, False-premise questions involve knowledge before 2022 and since 2022, 1-hop and multi-hop questions, and Overall).
 - **Datasets:** FreshQA, a new QA benchmark with 600 questions covering a wide spectrum of question and answer types.
 
-
-### [Med-HALT: Medical Domain Hallucination Test for Large Language Models](https://arxiv.org/abs/2307.15343)
-- **Metrics:** Reasoning Hallucination Tests (False Confidence Tests, None of the Above Tests, Fake Questions Tests), Memory Hallucination Tests (Abstract-to-Link Tests, PMID-to-Title Tests, Title-to-Link Tests, Link-to-Title Tests); Accuracy, Pointwise Score.
-- **Datasets:** Med-HALT: MEDMCQA, Headqa, Medqa USMILE, Medqa (Taiwan), Pubmed.
-
 ### [Beyond Factuality: A Comprehensive Evaluation of Large Language Models as Knowledge Generators](https://arxiv.org/abs/2310.07289)
 - **Metrics:** Factuality, Relevance, Coherence, Informativeness, Helpfulness and Validity.
 - **Datasets:** Natural Questions, Wizard of Wikipedia.
 
+### [Complex Claim Verification with Evidence Retrieved in the Wild](https://arxiv.org/abs/2305.11859)
+- **Metrics:** Accuracy, MAE, Macro-F1, soft accuracy.
+- **Datasets:** ClaimDecomp, which contains 1200 complex claims from PolitiFactL each claim is labeled with one of the six veracity labels, a justification paragraph written by expect fact-checkers, and subquestions annotated by prior work.
+
+
+### [Med-HALT: Medical Domain Hallucination Test for Large Language Models](https://arxiv.org/abs/2307.15343)
+- **Metrics:** Reasoning Hallucination Tests (False Confidence Tests, None of the Above Tests, Fake Questions Tests), Memory Hallucination Tests (Abstract-to-Link Tests, PMID-to-Title Tests, Title-to-Link Tests, Link-to-Title Tests); Accuracy, Pointwise Score.
+- **Datasets:** Med-HALT: MEDMCQA, Headqa, Medqa USMILE, Medqa (Taiwan), Pubmed.
 
 ## Overviews, Surveys, and Shared Tasks
 
@@ -221,7 +224,7 @@
 - [AnyScale - Llama 2 is about as factually accurate as GPT-4 for summaries and is 30X cheaper](https://www.anyscale.com/blog/llama-2-is-about-as-factually-accurate-as-gpt-4-for-summaries-and-is-30x-cheaper)
 - [Arthur.ai - Hallucination Experiment](https://www.arthur.ai/gap-articles/hallucination-experiment)
 - [Vectara - Cut the Bull…. Detecting Hallucinations in Large Language Models](https://vectara.com/cut-the-bull-detecting-hallucinations-in-large-language-models/)
-- [Vectara LLM Leaderboard](https://github.com/vectara/hallucination-leaderboard)
+- [Vectara LLM Hallucination Leaderboard](https://github.com/vectara/hallucination-leaderboard)
 
 ## Open Source Models for Measuring Hallucinations
 - [AlignScore Code and Model - GutHub](https://github.com/yuh-zha/AlignScore)
