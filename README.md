@@ -200,6 +200,7 @@
 - [Mitigating LLM Hallucinations: a multifaceted approach](https://amatriain.net/blog/hallucinations)
 - [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629)
 - [A Survey of Hallucination in Large Foundation Models](https://arxiv.org/abs/2309.05922)
+- [A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions](https://github.com/LuckyyySTA/Awesome-LLM-hallucination)
 - [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)
 - [SemEval-2024 Task-6 - SHROOM, a Shared-task on Hallucinations and Related Observable Overgeneration Mistakes](https://helsinki-nlp.github.io/shroom/)
 - [llm-hallucination-survey](https://github.com/HillZhang1999/llm-hallucination-survey)
