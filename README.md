@@ -197,6 +197,10 @@
 - **Metrics:** Accuracy, F1/Precision/Recall.
 - **Datasets:** Reasoning, Math, Writing/Rec, Science/Tech, World Knowledge: GSM8K, ChatGPT, MATH, TruthfulQA, Quora, MMLU/hc3.
 
+### [Evaluating Hallucinations in Chinese Large Language Models](https://arxiv.org/abs/2310.03368)
+- **Metrics:** Humand and GPT-4 evaluations.
+- **Datasets:** HalluQA (which they propose), and mention TruthfulQA, ChineseFactEval, HaluEval.
+
 
 
 ### [Med-HALT: Medical Domain Hallucination Test for Large Language Models](https://arxiv.org/abs/2307.15343)
