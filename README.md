@@ -193,6 +193,11 @@
 - **Metrics:** Accuracy, MAE, Macro-F1, soft accuracy.
 - **Datasets:** ClaimDecomp, which contains 1200 complex claims from PolitiFactL each claim is labeled with one of the six veracity labels, a justification paragraph written by expect fact-checkers, and subquestions annotated by prior work.
 
+### [FELM: Benchmarking Factuality Evaluation of Large Language Models](https://arxiv.org/abs/2310.00741)
+- **Metrics:** Accuracy, F1/Precision/Recall.
+- **Datasets:** Reasoning, Math, Writing/Rec, Science/Tech, World Knowledge: GSM8K, ChatGPT, MATH, TruthfulQA, Quora, MMLU/hc3.
+
+
 
 ### [Med-HALT: Medical Domain Hallucination Test for Large Language Models](https://arxiv.org/abs/2307.15343)
 - **Metrics:** Reasoning Hallucination Tests (False Confidence Tests, None of the Above Tests, Fake Questions Tests), Memory Hallucination Tests (Abstract-to-Link Tests, PMID-to-Title Tests, Title-to-Link Tests, Link-to-Title Tests); Accuracy, Pointwise Score.
