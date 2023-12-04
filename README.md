@@ -201,6 +201,17 @@
 - **Metrics:** Humand and GPT-4 evaluations.
 - **Datasets:** HalluQA (which they propose), and mention TruthfulQA, ChineseFactEval, HaluEval.
 
+### [On Faithfulness and Factuality in Abstractive Summarization](https://arxiv.org/abs/2305.11747)
+- **Metrics:** ROUGE, BERTScore; human assessment (identify hallucinatory spans, and whether it's intrinsic or extrinsic) -- *intrinsic hallucinations* are manipulations of the information in the input document, while *extrinsic hallucinations* are informations not directly inferable from the input document. Humans were asked to annotate intrinsic and extrinsic hallucinations.
+- **Datasets:** XSum.
+
+### [QuestEval: Summarization Asks for Fact-based Evaluation](https://arxiv.org/abs/2103.12693)
+- **Metrics:** QuestEval (proposed in this work), for testing for *consistency*, *coherence*, *fluency*, and *relevance*. ROUGE, BLUE, METEOR, BERTScore. SummaQA, QAGS.
+- **Datasets:** SummEval, QAGS-XSUM, SQuAD-v2.
+
+### [QAFactEval: Improved QA-Based Factual Consistency Evaluation for Summarization](https://arxiv.org/abs/2112.08542)
+- **Metrics:** QAFactEval (proposed in this work), measuring answer selection, question generation, question answering, answer overlap, and filtering/answerability.
+- **Datasets:** SummaC, a collection of benchmarks for binary factual consistency evaluation; CGS, correct and incorrect sentences from CNN/DailyMail; XSF; Polytope; FactCC; SummEval; FRANK; QAGs.
 
 
 ### [Med-HALT: Medical Domain Hallucination Test for Large Language Models](https://arxiv.org/abs/2307.15343)
