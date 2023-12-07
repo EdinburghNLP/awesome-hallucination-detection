@@ -213,10 +213,13 @@
 - **Metrics:** QAFactEval (proposed in this work), measuring answer selection, question generation, question answering, answer overlap, and filtering/answerability.
 - **Datasets:** SummaC, a collection of benchmarks for binary factual consistency evaluation; CGS, correct and incorrect sentences from CNN/DailyMail; XSF; Polytope; FactCC; SummEval; FRANK; QAGs.
 
-
 ### [Med-HALT: Medical Domain Hallucination Test for Large Language Models](https://arxiv.org/abs/2307.15343)
 - **Metrics:** Reasoning Hallucination Tests (False Confidence Tests, None of the Above Tests, Fake Questions Tests), Memory Hallucination Tests (Abstract-to-Link Tests, PMID-to-Title Tests, Title-to-Link Tests, Link-to-Title Tests); Accuracy, Pointwise Score.
 - **Datasets:** Med-HALT: MEDMCQA, Headqa, Medqa USMILE, Medqa (Taiwan), Pubmed.
+
+### [Fast and Accurate Factual Inconsistency Detection Over Long Documents](https://arxiv.org/abs/2310.13189)
+- **Metrics:** SCALE (new metric proposed in this work). Compared with Q², ANLI, SummaC, F1, BLEURT, QuestEval, BARTScore, BERTScore (Table 3). 
+- **Datasets:** TRUE benchmark and ScreenEval, new dataset proposed in this work to assess the factual inconsistency in long-form dialogues (52 documents from SummScreen).
 
 ## Overviews, Surveys, and Shared Tasks
 
