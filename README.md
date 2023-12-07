@@ -189,7 +189,7 @@
 - **Metrics:** Factuality, Relevance, Coherence, Informativeness, Helpfulness and Validity.
 - **Datasets:** Natural Questions, Wizard of Wikipedia.
 
-### [Complex Claim Verification with Evidence Retrieved in the Wild](https://arxiv.org/abs/2305.11859)
+### [Complex Claim Verification with Evidence Retrieved in the Wild](https://arxiv.org/abs/2305.11859)
 - **Metrics:** Accuracy, MAE, Macro-F1, soft accuracy.
 - **Datasets:** ClaimDecomp, which contains 1200 complex claims from PolitiFactL each claim is labeled with one of the six veracity labels, a justification paragraph written by expect fact-checkers, and subquestions annotated by prior work.
 
@@ -197,19 +197,19 @@
 - **Metrics:** Accuracy, F1/Precision/Recall.
 - **Datasets:** Reasoning, Math, Writing/Rec, Science/Tech, World Knowledge: GSM8K, ChatGPT, MATH, TruthfulQA, Quora, MMLU/hc3.
 
-### [Evaluating Hallucinations in Chinese Large Language Models](https://arxiv.org/abs/2310.03368)
+### [Evaluating Hallucinations in Chinese Large Language Models](https://arxiv.org/abs/2310.03368)
 - **Metrics:** Humand and GPT-4 evaluations.
 - **Datasets:** HalluQA (which they propose), and mention TruthfulQA, ChineseFactEval, HaluEval.
 
-### [On Faithfulness and Factuality in Abstractive Summarization](https://arxiv.org/abs/2305.11747)
+### [On Faithfulness and Factuality in Abstractive Summarization](https://arxiv.org/abs/2305.11747)
 - **Metrics:** ROUGE, BERTScore; human assessment (identify hallucinatory spans, and whether it's intrinsic or extrinsic) -- *intrinsic hallucinations* are manipulations of the information in the input document, while *extrinsic hallucinations* are informations not directly inferable from the input document. Humans were asked to annotate intrinsic and extrinsic hallucinations.
 - **Datasets:** XSum.
 
-### [QuestEval: Summarization Asks for Fact-based Evaluation](https://arxiv.org/abs/2103.12693)
+### [QuestEval: Summarization Asks for Fact-based Evaluation](https://arxiv.org/abs/2103.12693)
 - **Metrics:** QuestEval (proposed in this work), for testing for *consistency*, *coherence*, *fluency*, and *relevance*. ROUGE, BLUE, METEOR, BERTScore. SummaQA, QAGS.
 - **Datasets:** SummEval, QAGS-XSUM, SQuAD-v2.
 
-### [QAFactEval: Improved QA-Based Factual Consistency Evaluation for Summarization](https://arxiv.org/abs/2112.08542)
+### [QAFactEval: Improved QA-Based Factual Consistency Evaluation for Summarization](https://arxiv.org/abs/2112.08542)
 - **Metrics:** QAFactEval (proposed in this work), measuring answer selection, question generation, question answering, answer overlap, and filtering/answerability.
 - **Datasets:** SummaC, a collection of benchmarks for binary factual consistency evaluation; CGS, correct and incorrect sentences from CNN/DailyMail; XSF; Polytope; FactCC; SummEval; FRANK; QAGs.
 
@@ -253,6 +253,7 @@
 - [Google True Teacher Model - HuggingFace](https://huggingface.co/google/t5_11b_trueteacher_and_anli)
 - [Hallucination Evaluation Model - HuggingFace](https://huggingface.co/vectara/hallucination_evaluation_model)
 - [Summac Code and Model - GitHub](https://github.com/tingofurro/summac)
+- [SCALE Code and Model - GutHub](https://github.com/asappresearch/scale-score)
 
 ## Definitions and Notes
 
