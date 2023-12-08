@@ -221,6 +221,14 @@
 - **Metrics:** SCALE (new metric proposed in this work). Compared with Q², ANLI, SummaC, F1, BLEURT, QuestEval, BARTScore, BERTScore (Table 3). 
 - **Datasets:** TRUE benchmark and ScreenEval, new dataset proposed in this work to assess the factual inconsistency in long-form dialogues (52 documents from SummScreen).
 
+### [Understanding Factuality in Abstractive Summarization with FRANK: A Benchmark for Factuality Metrics](https://arxiv.org/abs/2104.13346)
+- **Metrics:** BERTScore, FEQA, QGFS, DAE, FactCC
+- **Datasets:** Proposed a new dataset FRANK: human annotated factual errors for CNN/DM and XSum dataset
+
+### [TRUE: Re-evaluating Factual Consistency Evaluation](https://aclanthology.org/2022.dialdoc-1.19/)
+- **Metrics:** Q², ANLI, SummaC, BLEURT, QuestEval, FactCC, BARTScore, BERTScore
+- **Datasets:** Consolidation of 11 different human annotated datasets for fctual consistency.
+
 ## Overviews, Surveys, and Shared Tasks
 
 - [Mitigating LLM Hallucinations: a multifaceted approach](https://amatriain.net/blog/hallucinations)
