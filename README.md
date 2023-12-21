@@ -229,6 +229,11 @@
 - **Metrics:** Q², ANLI, SummaC, BLEURT, QuestEval, FactCC, BARTScore, BERTScore
 - **Datasets:** Consolidation of 11 different human annotated datasets for fctual consistency.
 
+### [The Curious Case of Hallucinatory (Un)answerability: Finding Truths in the Hidden States of Over-Confident Large Language Models](https://aclanthology.org/2023.emnlp-main.220/)
+- **Metrics:** (classification) F-1, Exact Match, (token) F-1
+- **Datasets:** SQuAD, Natural Questions, MuSiQue
+- **Comments:** This paper models explores LLMs' handling of (un)answerable questions in a closed-book setting, namely answering a question based on a given passage, where the passage doesn't have the answer. The paper shows that despite LLMs' tendency to hallucinate contextual answers, rather than state that they cannot answer the question, they possess internal understanding of the question's (un)answerability.
+
 ## Overviews, Surveys, and Shared Tasks
 
 - [Mitigating LLM Hallucinations: a multifaceted approach](https://amatriain.net/blog/hallucinations)
