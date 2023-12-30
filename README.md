@@ -234,6 +234,11 @@
 - **Datasets:** SQuAD, Natural Questions, MuSiQue
 - **Comments:** This paper models explores LLMs' handling of (un)answerable questions in a closed-book setting, namely answering a question based on a given passage, where the passage doesn't have the answer. The paper shows that despite LLMs' tendency to hallucinate contextual answers, rather than state that they cannot answer the question, they possess internal understanding of the question's (un)answerability.
 
+### [Do Androids Know They're Only Dreaming of Electric Sheep?](https://arxiv.org/abs/2312.17249)
+- **Metrics:** (Hallucination detection) Response-level F1, Span-level Partial Credit Match F1
+- **Datasets:** Organically generated and synthetically edited CNN DailyMail, ConvFEVER, and E2E, labeled span-wise for hallucinations
+- **Comments:** Language models know when they're hallucinating, and we can train probes on LLM hidden states during decoding to reliably detect them. 
+
 ## Overviews, Surveys, and Shared Tasks
 
 - [Mitigating LLM Hallucinations: a multifaceted approach](https://amatriain.net/blog/hallucinations)
