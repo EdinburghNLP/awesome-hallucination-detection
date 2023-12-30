@@ -2,6 +2,19 @@
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection) [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
+## Citing this repository
+
+```
+@misc{MinerviniAHD2014,
+  author = {Pasquale Minervini and others},
+  title = {awesome-hallucination-detection},
+  year = {2014},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/EdinburghNLP/awesome-hallucination-detection}}
+}
+```
+
 ## Papers and Summaries
 
 ### [Attention Satisfies: A Constraint-Satisfaction Lens on Factual Errors of Language Models](https://arxiv.org/abs/2309.15098)
