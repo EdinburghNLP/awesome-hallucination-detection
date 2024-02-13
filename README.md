@@ -17,10 +17,21 @@
 
 ## Papers and Summaries
 
+### [Unified Hallucination Detection for Multimodal Large Language Models](https://arxiv.org/pdf/2402.03190)
+- **Metrics:**  Accuracy, F1/Precision/Recall.
+- **Datasets:** MHaluBench
+- **Framework:** UniHD
+- **Comments:** This paper proposes a more unified problem setting for hallucination detection in MLLMs, unveils a meta-evaluation benchmark MHaluBench that encompasses various hallucination categories and multimodal tasks, and introduces UNIHD, a unified framework for the detection of hallucinations in content produced by MLLMs.
+
+### [FactCHD: Benchmarking Fact-Conflicting Hallucination Detection](https://arxiv.org/pdf/2310.12086)
+- **Metrics:**  F1 of detection, Match of explanation
+- **Datasets:** FactCHD
+- **Highlights:** This paper introduces the FACTCHD benchmark, which focuses on detecting fact-conflicting hallucinations. FACTCHD integrates factual knowledge from multiple domains, encompassing a wide range of fact patterns, including raw facts, multi-hop reasoning, comparison, and set operations. Its distinguishing feature lies in its goal to combine evidence chains rooted in factual information, enabling persuasive reasoning in predicting the factuality or non-factuality of a claim.
+
 ### [Attention Satisfies: A Constraint-Satisfaction Lens on Factual Errors of Language Models](https://arxiv.org/abs/2309.15098)
 - **Metrics:** AUROC, risk-coverage curve operating points
 - **Datasets:** CounterFact, factual queries generated from Wikidata
-- **Comments:** This paper models factual queries as constraint-satisfaction problems and find that attention to constraint tokens significantly correlates with factual correctness / hallucinations.
+- **Comments:** This paper models factual queries as constraint-satisfaction problems and finds that attention to constraint tokens significantly correlates with factual correctness / hallucinations.
 
 ### [TRUE: Re-Evaluating Factual Consistency Evaluation](https://arxiv.org/abs/2204.04991)
 - **Metrics:** AUROC, across multiple datasets and evaluation methods
