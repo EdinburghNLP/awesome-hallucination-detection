@@ -31,7 +31,7 @@
 ### [Attention Satisfies: A Constraint-Satisfaction Lens on Factual Errors of Language Models](https://arxiv.org/abs/2309.15098)
 - **Metrics:** AUROC, risk-coverage curve operating points
 - **Datasets:** CounterFact, factual queries generated from Wikidata
-- **Comments:** This paper models factual queries as constraint-satisfaction problems and finds that attention to constraint tokens significantly correlates with factual correctness / hallucinations.
+- **Comments:** This paper models factual queries as constraint-satisfaction problems and finds that attention to constraint tokens significantly correlates with factual correctness/hallucinations.
 
 ### [TRUE: Re-Evaluating Factual Consistency Evaluation](https://arxiv.org/abs/2204.04991)
 - **Metrics:** AUROC, across multiple datasets and evaluation methods
@@ -237,10 +237,6 @@
 - **Metrics:** QAFactEval (proposed in this work), measuring answer selection, question generation, question answering, answer overlap, and filtering/answerability.
 - **Datasets:** SummaC, a collection of benchmarks for binary factual consistency evaluation; CGS, correct and incorrect sentences from CNN/DailyMail; XSF; Polytope; FactCC; SummEval; FRANK; QAGs.
 
-### [Med-HALT: Medical Domain Hallucination Test for Large Language Models](https://arxiv.org/abs/2307.15343)
-- **Metrics:** Reasoning Hallucination Tests (False Confidence Tests, None of the Above Tests, Fake Questions Tests), Memory Hallucination Tests (Abstract-to-Link Tests, PMID-to-Title Tests, Title-to-Link Tests, Link-to-Title Tests); Accuracy, Pointwise Score.
-- **Datasets:** Med-HALT: MEDMCQA, Headqa, Medqa USMILE, Medqa (Taiwan), Pubmed.
-
 ### [Fast and Accurate Factual Inconsistency Detection Over Long Documents](https://arxiv.org/abs/2310.13189)
 - **Metrics:** SCALE (new metric proposed in this work). Compared with Q², ANLI, SummaC, F1, BLEURT, QuestEval, BARTScore, BERTScore (Table 3). 
 - **Datasets:** TRUE benchmark and ScreenEval, new dataset proposed in this work to assess the factual inconsistency in long-form dialogues (52 documents from SummScreen).
@@ -262,6 +258,20 @@
 - **Metrics:** (Hallucination detection) Response-level F1, Span-level Partial Credit Match F1
 - **Datasets:** Organically generated and synthetically edited CNN DailyMail, ConvFEVER, and E2E, labeled span-wise for hallucinations
 - **Comments:** Language models know when they're hallucinating, and we can train probes on LLM hidden states during decoding to reliably detect them. 
+
+### [Correction with Backtracking Reduces Hallucination in Summarization](https://arxiv.org/abs/2310.16176)
+- **Metrics:** AlignScore, FactCC, BS-Fact, ROUGE-L
+- **Datasets:** CNN/DM, XSum, Newsroom
+
+
+
+
+## Domain-specific Entries
+
+### [Med-HALT: Medical Domain Hallucination Test for Large Language Models](https://arxiv.org/abs/2307.15343)
+- **Metrics:** Reasoning Hallucination Tests (False Confidence Tests, None of the Above Tests, Fake Questions Tests), Memory Hallucination Tests (Abstract-to-Link Tests, PMID-to-Title Tests, Title-to-Link Tests, Link-to-Title Tests); Accuracy, Pointwise Score.
+- **Datasets:** Med-HALT: MEDMCQA, Headqa, Medqa USMILE, Medqa (Taiwan), Pubmed.
+
 
 ## Overviews, Surveys, and Shared Tasks
 
