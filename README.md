@@ -263,6 +263,14 @@
 - **Metrics:** AlignScore, FactCC, BS-Fact, ROUGE-L
 - **Datasets:** CNN/DM, XSum, Newsroom
 
+### [Fine-grained Hallucination Detection and Editing for Language Models
+](https://arxiv.org/abs/2401.06855)
+- **Metrics:** Precision, Recall, F1.
+- **Datasets:** Custom fine-grained hallucination detection/editing dataset for various types of (factual) hallucinations: Entity, Relation, Contradictory, Invented, Subjective, Unverifiable.
+
+
+
+
 
 
 
