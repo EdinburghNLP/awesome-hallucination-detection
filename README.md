@@ -272,6 +272,13 @@
 - **Metrics:** Accuracy for various error types -- positive examples, date swap, entity swap, negated sentences, number swap, pronoun swap.
 - **Datasets:** They propose SummEdits, a 10-domain inconsistency detection benchmark.
 
+### [Evaluating the Factual Consistency of Abstractive Text Summarization](https://arxiv.org/abs/1910.12840)
+- **Metrics:** They propose FactCC, a metric that measures the factual consistency of abstractive text summarization (intuition: a summary is factually consistent if it contains the same facts as the source document)
+- **Datasets:** CNN/DM for generating training data; MNLI and FEVER for training models. Human-based experiments for evaluation on claims about CNN/DM articles.
+
+
+
+
 
 
 
