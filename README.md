@@ -268,6 +268,10 @@
 - **Metrics:** Precision, Recall, F1.
 - **Datasets:** Custom fine-grained hallucination detection/editing dataset for various types of (factual) hallucinations: Entity, Relation, Contradictory, Invented, Subjective, Unverifiable.
 
+### [LLMs as Factual Reasoners: Insights from Existing Benchmarks and Beyond](https://arxiv.org/abs/2305.14540)
+- **Metrics:** Accuracy for various error types -- positive examples, date swap, entity swap, negated sentences, number swap, pronoun swap.
+- **Datasets:** They propose SummEdits, a 10-domain inconsistency detection benchmark.
+
 
 
 
