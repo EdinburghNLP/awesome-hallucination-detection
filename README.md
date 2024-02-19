@@ -288,11 +288,11 @@
 - **Metrics:** Hallucination rate in several settings (original, with optimised system message, with full LLM weights, with synthetic data, or with mixtures of synthetic and reference data); BLEU, ROUGE-1, ROUGE-2, ROUGE-L.
 - **Datasets:** Search-and-retrieve (MS MARCO), meeting summarisation (QMSum), automated clinical report generation (ACI-Bench).
 
-### [Faithfulness-Aware Decoding Strategies for Abstractive Summarization](https://arxiv.org/abs/2303.03278)
+### [Faithfulness-Aware Decoding Strategies for Abstractive Summarization](https://arxiv.org/abs/2303.03278)
 - **Metrics:** ROUGE-L, BERTScore, BS-Fact, FactCC, DAE, QuestEval
 - **Datasets:** CNN/DM, XSum
 
-### [KL-Divergence Guided Temperature Sampling](https://arxiv.org/abs/2306.01286)
+### [KL-Divergence Guided Temperature Sampling](https://arxiv.org/abs/2306.01286)
 - **Metrics:** Conversational QA: models fine-tuned on MNLI, SNLI, FEVER, PAWS, ScTail, and VitaminC. Summarisation: models fine-tuned on ANLI and XNLI.
 - **Datasets:** Question Rewriting in Conversational Context (QReCC), XLSum.
 
