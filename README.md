@@ -143,7 +143,7 @@
 
 ### [Q²: Evaluating Factual Consistency in Knowledge-Grounded Dialogues via Question Generation and Question Answering](https://arxiv.org/abs/2104.08202)
 - **Metrics:** Q² is a metric itself, and it is compared with F1 token-level overlap, Precision and Recall, Q² w/o NLI, E2E NLI, Overlap, BERTScore, and BLEU.
-- **Datasets:** WoW which contains dialogues in which a bot needs to respond to useri nputs in a knowledgeable way; Topical-Chat, a human-human knowledge-grounded conversation dataset; Dialogue NLI, a dataset based on the Persona-Chat dialogue task consisting of premise-hypothesis pairs.
+- **Datasets:** WoW which contains dialogues in which a bot needs to respond to user inputs in a knowledgeable way; Topical-Chat, a human-human knowledge-grounded conversation dataset; Dialogue NLI, a dataset based on the Persona-Chat dialogue task consisting of premise-hypothesis pairs.
 
 ### [Do We Know What We Don’t Know? Studying Unanswerable Questions beyond SQuAD 2.0](https://aclanthology.org/2021.findings-emnlp.385.pdf)
 - **Metrics:** EM on All, "Has answer", and "IDK"
@@ -226,7 +226,7 @@
 - **Datasets:** HalluQA (which they propose), and mention TruthfulQA, ChineseFactEval, HaluEval.
 
 ### [On Faithfulness and Factuality in Abstractive Summarization](https://arxiv.org/abs/2305.11747)
-- **Metrics:** ROUGE, BERTScore; human assessment (identify hallucinatory spans, and whether it's intrinsic or extrinsic) -- *intrinsic hallucinations* are manipulations of the information in the input document, while *extrinsic hallucinations* are informations not directly inferable from the input document. Humans were asked to annotate intrinsic and extrinsic hallucinations.
+- **Metrics:** ROUGE, BERTScore; human assessment (identify hallucinatory spans, and whether it's intrinsic or extrinsic) -- *intrinsic hallucinations* are manipulations of the information in the input document, while *extrinsic hallucinations* are information not directly inferable from the input document. Humans were asked to annotate intrinsic and extrinsic hallucinations.
 - **Datasets:** XSum.
 
 ### [QuestEval: Summarization Asks for Fact-based Evaluation](https://arxiv.org/abs/2103.12693)
@@ -280,7 +280,9 @@
 - **Metrics:** Each dataset comes with its metrics (e.g., CoGenSumm uses a reranking-based measure; XSumFaith, SummEval, and FRANK propose several metrics and analyse how they correlate with human annotations; etc.) -- for SummaC, authors propose using balanced accuracy.
 - **Datasets:** They propose SummaC (Summary Consistency), a benchmark consisting of six large inconsistency detection datasets: CoGenSumm, XSumFaith, Polytope, FactCC, SummEval, and FRANK.
 
-
+### [On the Origin of Hallucinations in Conversational Models: Is it the Datasets or the Models?](https://arxiv.org/abs/2204.07931)
+- **Metrics:** Expert and non-expert annotations: Partial Hallucination, Entailment, Hallucination, Uncoop, Generic (each of these categories has more fine-grained sub-classes -- see e.g., Fig. 2) -- annotations follow the BEGIN and VRM taxonomies.
+- **Datasets:** Knowledge-grounded conversational benchmarks: Wizard of Wikipedia (WoW), CMU-DoG, and TopicalChat -- datasets consisting of dialogues between two speakers where the goal is to communicate information about particular topics while speakers are presented with a knowledge snippet relevant to the current turn.
 
 
 
