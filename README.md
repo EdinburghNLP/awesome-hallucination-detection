@@ -288,6 +288,11 @@
 - **Metrics:** Hallucination rate in several settings (original, with optimised system message, with full LLM weights, with synthetic data, or with mixtures of synthetic and reference data); BLEU, ROUGE-1, ROUGE-2, ROUGE-L.
 - **Datasets:** Search-and-retrieve (MS MARCO), meeting summarisation (QMSum), automated clinical report generation (ACI-Bench).
 
+### [Faithfulness-Aware Decoding Strategies for Abstractive Summarization](https://arxiv.org/abs/2303.03278)
+- **Metrics:** ROUGE-L, BERTScore, BS-Fact, FactCC, DAE, QuestEval
+- **Datasets:** CNN/DM, XSum
+
+
 
 
 
