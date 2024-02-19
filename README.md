@@ -292,6 +292,10 @@
 - **Metrics:** ROUGE-L, BERTScore, BS-Fact, FactCC, DAE, QuestEval
 - **Datasets:** CNN/DM, XSum
 
+### [KL-Divergence Guided Temperature Sampling](https://arxiv.org/abs/2306.01286)
+- **Metrics:** Conversational QA: models fine-tuned on MNLI, SNLI, FEVER, PAWS, ScTail, and VitaminC. Summarisation: models fine-tuned on ANLI and XNLI.
+- **Datasets:** Question Rewriting in Conversational Context (QReCC), XLSum.
+
 
 
 
