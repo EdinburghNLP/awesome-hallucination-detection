@@ -284,7 +284,9 @@
 - **Metrics:** Expert and non-expert annotations: Partial Hallucination, Entailment, Hallucination, Uncoop, Generic (each of these categories has more fine-grained sub-classes -- see e.g., Fig. 2) -- annotations follow the BEGIN and VRM taxonomies.
 - **Datasets:** Knowledge-grounded conversational benchmarks: Wizard of Wikipedia (WoW), CMU-DoG, and TopicalChat -- datasets consisting of dialogues between two speakers where the goal is to communicate information about particular topics while speakers are presented with a knowledge snippet relevant to the current turn.
 
-
+### [Teaching Language Models to Hallucinate Less with Synthetic Tasks](https://arxiv.org/abs/2310.06827)
+- **Metrics:** Hallucination rate in several settings (original, with optimised system message, with full LLM weights, with synthetic data, or with mixtures of synthetic and reference data); BLEU, ROUGE-1, ROUGE-2, ROUGE-L.
+- **Datasets:** Search-and-retrieve (MS MARCO), meeting summarisation (QMSum), automated clinical report generation (ACI-Bench).
 
 
 
