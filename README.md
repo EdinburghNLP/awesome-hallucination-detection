@@ -296,8 +296,9 @@
 - **Metrics:** Conversational QA: models fine-tuned on MNLI, SNLI, FEVER, PAWS, ScTail, and VitaminC. Summarisation: models fine-tuned on ANLI and XNLI.
 - **Datasets:** Question Rewriting in Conversational Context (QReCC), XLSum.
 
-
-
+### [Investigating Hallucinations in Pruned Large Language Models for Abstractive Summarization](https://arxiv.org/abs/2311.09335)
+- **Metrics:** Hallucination Risk Metrics (HaRiM+), SummaC, SummaCzs, SummaCconv, Hallucination Risk Ratio (HRR)
+- **Datasets:** FactCC, Polytope, SummEval, Legal Contracts, RCT
 
 
 
