@@ -276,6 +276,14 @@
 - **Metrics:** They propose FactCC, a metric that measures the factual consistency of abstractive text summarization (intuition: a summary is factually consistent if it contains the same facts as the source document)
 - **Datasets:** CNN/DM for generating training data; MNLI and FEVER for training models. Human-based experiments for evaluation on claims about CNN/DM articles.
 
+### [SummaC: Re-Visiting NLI-based Models for Inconsistency Detection in Summarization](https://arxiv.org/abs/2111.09525)
+- **Metrics:** Each dataset comes with its metrics (e.g., CoGenSumm uses a reranking-based measure; XSumFaith, SummEval, and FRANK propose several metrics and analyse how they correlate with human annotations; etc.) -- for SummaC, authors propose using balanced accuracy.
+- **Datasets:** They propose SummaC (Summary Consistency), a benchmark consisting of six large inconsistency detection datasets: CoGenSumm, XSumFaith, Polytope, FactCC, SummEval, and FRANK.
+
+
+
+
+
 
 
 
