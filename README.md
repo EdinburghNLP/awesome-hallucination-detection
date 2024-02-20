@@ -302,7 +302,7 @@
 
 ### [Entity-Based Knowledge Conflicts in Question Answering](https://arxiv.org/abs/2109.05052)
 - **Metrics:** EM, Memorisation ratio.
-- **Datasets:** NQ Dev with Answer Overlap (AO) an No Answer Overlap (NAO), NewsQA.
+- **Datasets:** NQ Dev with Answer Overlap (AO) and No Answer Overlap (NAO), NewsQA.
 
 
 
