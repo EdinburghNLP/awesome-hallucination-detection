@@ -300,6 +300,12 @@
 - **Metrics:** Hallucination Risk Metrics (HaRiM+), SummaC, SummaCzs, SummaCconv, Hallucination Risk Ratio (HRR)
 - **Datasets:** FactCC, Polytope, SummEval, Legal Contracts, RCT
 
+### [Entity-Based Knowledge Conflicts in Question Answering](https://arxiv.org/abs/2109.05052)
+- **Metrics:** EM, Memorisation ratio.
+- **Datasets:** NQ Dev with Answer Overlap (AO) an No Answer Overlap (NAO), NewsQA.
+
+
+
 
 
 
