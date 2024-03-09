@@ -323,6 +323,7 @@
 ## Overviews, Surveys, and Shared Tasks
 
 - [Mitigating LLM Hallucinations: a multifaceted approach](https://amatriain.net/blog/hallucinations)
+- [Siren’s Song in the AI Ocean: A Survey on Hallucination in Large Language Models](https://arxiv.org/abs/2309.01219)
 - [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629)
 - [A Survey of Hallucination in Large Foundation Models](https://arxiv.org/abs/2309.05922)
 - [A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions](https://github.com/LuckyyySTA/Awesome-LLM-hallucination)
