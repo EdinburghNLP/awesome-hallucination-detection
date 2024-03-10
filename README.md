@@ -304,7 +304,9 @@
 - **Metrics:** EM, Memorisation ratio.
 - **Datasets:** NQ Dev with Answer Overlap (AO) and No Answer Overlap (NAO), NewsQA.
 
-
+### [TruthX: Alleviating Hallucinations by Editing Large Language Models in Truthful Space](https://arxiv.org/abs/2402.17811)
+- **Metrics:** MC1/MC2/MC3 scores for TruthffulQA multiple-choice task; %Truth, %Info, %Truth*Info for TruthffulQA open-ended generation task; Choice accuracy for Natural Questions, TriviaQA and FACTOR (news, expert, wiki).
+- **Datasets:** TruthfulQA, Natural Questions, TriviaQA, FACTOR (news, expert, wiki)
 
 
 
