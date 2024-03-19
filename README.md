@@ -17,6 +17,11 @@
 
 ## Papers and Summaries
 
+### [HallusionBench: An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models](https://arxiv.org/pdf/2310.14566.pdf)
+- **Metrics:**  Accuracy.
+- **Datasets:** HallusionBench
+- **Comments:** This benchmark presents significant challenges to advanced large visual-language models (LVLMs), such as GPT-4V(Vision), Gemini Pro Vision, Claude 3, and LLaVA-1.5, by emphasizing nuanced understanding and interpretation of visual data. This paper introduces a novel structure for these visual questions designed to establish control groups. This structure is able to conduct a quantitative analysis of the models' response tendencies, logical consistency, and various failure modes.
+
 ### [Unified Hallucination Detection for Multimodal Large Language Models](https://arxiv.org/pdf/2402.03190)
 - **Metrics:**  Accuracy, F1/Precision/Recall.
 - **Datasets:** MHaluBench
