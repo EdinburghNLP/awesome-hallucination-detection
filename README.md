@@ -313,6 +313,9 @@
 - **Metrics:** MC1/MC2/MC3 scores for TruthffulQA multiple-choice task; %Truth, %Info, %Truth*Info for TruthffulQA open-ended generation task; Choice accuracy for Natural Questions, TriviaQA and FACTOR (news, expert, wiki).
 - **Datasets:** TruthfulQA, Natural Questions, TriviaQA, FACTOR (news, expert, wiki)
 
+### [Question Decomposition Improves the Faithfulness of Model-Generated Reasoning](https://arxiv.org/abs/2307.11768)
+- **Metrics:** Accuracy, Final Answer Truncation Sensitivity, Final Answer Corruption Sensitivity, Biased-Context Accuracy Change.
+- **Datasets:** HotpotQA, OpenbookQA, StrategyQA, TruthfulQA.
 
 
 
