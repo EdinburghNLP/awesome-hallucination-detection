@@ -329,6 +329,12 @@
 - **Metrics:** Reasoning Hallucination Tests (False Confidence Tests, None of the Above Tests, Fake Questions Tests), Memory Hallucination Tests (Abstract-to-Link Tests, PMID-to-Title Tests, Title-to-Link Tests, Link-to-Title Tests); Accuracy, Pointwise Score.
 - **Datasets:** Med-HALT: MEDMCQA, Headqa, Medqa USMILE, Medqa (Taiwan), Pubmed.
 
+### [Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning](https://people.ece.ubc.ca/amesbah/resources/papers/cedar-icse23.pdf)
+- **Metrics:** Accuracy, Accuracy plausible match
+- **Datasets:** ATLAS dataset, TFix dataset
+- **Comments:**: Published at ICSE 2023
+
+
 
 ## Overviews, Surveys, and Shared Tasks
 
