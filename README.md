@@ -360,6 +360,7 @@
 - [Arthur.ai - Hallucination Experiment](https://www.arthur.ai/gap-articles/hallucination-experiment)
 - [Vectara - Cut the Bull…. Detecting Hallucinations in Large Language Models](https://vectara.com/cut-the-bull-detecting-hallucinations-in-large-language-models/)
 - [Vectara LLM Hallucination Leaderboard](https://github.com/vectara/hallucination-leaderboard)
+- [TofuEval: Evaluating Hallucinations of LLMs on Topic-Focused Dialogue Summarization](https://arxiv.org/abs/2402.13249)
 
 ## Open Source Models for Measuring Hallucinations
 - [AlignScore Code and Model - GutHub](https://github.com/yuh-zha/AlignScore)
