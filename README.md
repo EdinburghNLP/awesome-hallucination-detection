@@ -268,12 +268,11 @@
 - **Metrics:** AlignScore, FactCC, BS-Fact, ROUGE-L
 - **Datasets:** CNN/DM, XSum, Newsroom
 
-### [Fine-grained Hallucination Detection and Editing for Language Models
-](https://arxiv.org/abs/2401.06855)
+### [Fine-grained Hallucination Detection and Editing for Language Models](https://arxiv.org/abs/2401.06855)
 - **Metrics:** Precision, Recall, F1.
 - **Datasets:** Custom fine-grained hallucination detection/editing dataset for various types of (factual) hallucinations: Entity, Relation, Contradictory, Invented, Subjective, Unverifiable.
 
-### [LLMs as Factual Reasoners: Insights from Existing Benchmarks and Beyond](https://arxiv.org/abs/2305.14540)
+### [LLMs as Factual Reasoners: Insights from Existing Benchmarks and Beyond](https://arxiv.org/abs/2305.14540)
 - **Metrics:** Accuracy for various error types -- positive examples, date swap, entity swap, negated sentences, number swap, pronoun swap.
 - **Datasets:** They propose SummEdits, a 10-domain inconsistency detection benchmark.
 
@@ -317,7 +316,9 @@
 - **Metrics:** Accuracy, Final Answer Truncation Sensitivity, Final Answer Corruption Sensitivity, Biased-Context Accuracy Change.
 - **Datasets:** HotpotQA, OpenbookQA, StrategyQA, TruthfulQA.
 
-
+### [Self-contradictory Hallucinations of Large Language Models: Evaluation, Detection and Mitigation](https://arxiv.org/abs/2305.15852)
+- **Metrics:** For detection: Precision, Recall, F1. For Mitigation: Ratio of self-contradiction removed, Ratio of informative facts retained, perplexity increased.
+- **Datasets:** Custom Open-domain Text Generation dataset, LLM-generated encyclopedic text descriptions for Wikipedia entities, PopQA.
 
 
 
