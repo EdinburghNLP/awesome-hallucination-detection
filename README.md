@@ -350,6 +350,7 @@
 - [SemEval-2024 Task-6 - SHROOM, a Shared-task on Hallucinations and Related Observable Overgeneration Mistakes](https://helsinki-nlp.github.io/shroom/)
 - [llm-hallucination-survey](https://github.com/HillZhang1999/llm-hallucination-survey)
 - [How Do Large Language Models Capture the Ever-changing World Knowledge? A Review of Recent Advances](https://arxiv.org/abs/2310.07343)
+- [The Dawn After the Dark: An Empirical Study on Factuality Hallucination in Large Language Models](https://arxiv.org/abs/2401.03205)
 
 ![Taxonomy from Huang et al.](figures/huang_taxonomy.png "Taxonomy")
 
@@ -361,6 +362,8 @@
 - **Natural Language Inference (NLI)-based**: based on the idea that only the source knowledge reference should entail the entirety of the information in faithful and hallucination-free generation.
 
 [A Survey of Hallucination in “Large” Foundation Models](https://arxiv.org/abs/2309.05922) surveys papers flagging them for *detection*, *mitigation*, *tasks*, *datasets*, and *evaluation metrics*. Regarding hallucinations in text, it categorises papers by *LLMs*, *Multilingual LLMs*, and *Domain-specific LLMs*.
+
+[The Dawn After the Dark: An Empirical Study on Factuality Hallucination in Large Language Models](https://arxiv.org/abs/2401.03205) proposed a taxonomy of different types of hallucinations: Entity-error Hallucination, Relation-error Hallucination, Incompleteness Hallucination, Outdatedness Hallucination, Overclaim Hallucination, Unverifiability Hallucination.
 
 ## Measuring Hallucinations in LLMs
 - [AnyScale - Llama 2 is about as factually accurate as GPT-4 for summaries and is 30X cheaper](https://www.anyscale.com/blog/llama-2-is-about-as-factually-accurate-as-gpt-4-for-summaries-and-is-30x-cheaper)
