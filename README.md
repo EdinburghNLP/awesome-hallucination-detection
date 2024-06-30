@@ -82,6 +82,10 @@
 - **Metrics:** AUROC, AUARC, Uncertainty and Confidence metrics (NumSet, Deg, EigV).
 - **Datasets:** CoQA (Open-book Conversational QA dataset), TriviaQA and Natural Questions (Closed-book QA).
 
+### [Contextualized Sequence Likelihood: Enhanced Confidence Scores for Natural Language Generation](https://arxiv.org/abs/2406.01806)
+- **Metrics:** AUROC, AUARC; Improved sequence likelihood (log probability of generated sequence) used in Confidence or Uncertainty computation.
+- **Datasets:** CoQA (Open-book Conversational QA dataset), TriviaQA and Natural Questions (Closed-book QA).
+
 ### [FaithDial: A Faithful Benchmark for Information-Seeking Dialogue](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00529/114373/FaithDial-A-Faithful-Benchmark-for-Information)
 - **Metrics:** Metrics measure either the degree of hallucination of generated responses wrt to some given knowledge or their overlap with gold faithful responses: Critic, Q² (F1, NLI), BERTScore, F1, BLEU, ROUGE.
 - **Datasets:** FaithDial, WoW.
