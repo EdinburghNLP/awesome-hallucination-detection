@@ -5,10 +5,10 @@
 ## Citing this repository
 
 ```
-@misc{MinerviniAHD2014,
+@misc{MinerviniAHD2024,
   author = {Pasquale Minervini and others},
   title = {awesome-hallucination-detection},
-  year = {2014},
+  year = {2024},
   publisher = {GitHub},
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/EdinburghNLP/awesome-hallucination-detection}}
