@@ -369,6 +369,14 @@
 
 [The Dawn After the Dark: An Empirical Study on Factuality Hallucination in Large Language Models](https://arxiv.org/abs/2401.03205) proposed a taxonomy of different types of hallucinations: Entity-error Hallucination, Relation-error Hallucination, Incompleteness Hallucination, Outdatedness Hallucination, Overclaim Hallucination, Unverifiability Hallucination.
 
+[Internal Consistency and Self-Feedback in Large Language Models: A Survey](https://arxiv.org/abs/2407.14507) proposed a new perspective, **Internal Consistency**, to approach "enhancing reasoning" and ""alleviating hallucinations". This perspective allowed us to unify many seemingly unrelated works into a single framework. To improve internal consistency (which in turn enhances reasoning ability and mitigates hallucinations), this paper identified common elements across various works and summarized them into a Self-Feedback framework.
+
+This framework consists of three components: Self-Evaluation, Internal Consistency Signal, and Self-Update.
+
+- **Self-Evaluation**: Responsible for evaluating the model's internal consistency based on its language expressions, decoding layer probability distributions, and hidden states.
+- **Internal Consistency Signal**: Through Self-Evaluation, we can obtain numerical, textual, external, and even comparative signals.
+- **Self-Update**: Using these signals, we can update the model's expressions or even the model itself to improve internal consistency.
+
 ## Measuring Hallucinations in LLMs
 - [AnyScale - Llama 2 is about as factually accurate as GPT-4 for summaries and is 30X cheaper](https://www.anyscale.com/blog/llama-2-is-about-as-factually-accurate-as-gpt-4-for-summaries-and-is-30x-cheaper)
 - [Arthur.ai - Hallucination Experiment](https://www.arthur.ai/gap-articles/hallucination-experiment)
