@@ -385,11 +385,12 @@ This framework consists of three components: Self-Evaluation, Internal Consisten
 - [TofuEval: Evaluating Hallucinations of LLMs on Topic-Focused Dialogue Summarization](https://arxiv.org/abs/2402.13249)
 
 ## Open Source Models for Measuring Hallucinations
-- [AlignScore Code and Model - GutHub](https://github.com/yuh-zha/AlignScore)
+- [MiniCheck Code and Model - GitHub](https://github.com/Liyan06/MiniCheck)
+- [AlignScore Code and Model - GitHub](https://github.com/yuh-zha/AlignScore)
 - [Google True Teacher Model - HuggingFace](https://huggingface.co/google/t5_11b_trueteacher_and_anli)
 - [Hallucination Evaluation Model - HuggingFace](https://huggingface.co/vectara/hallucination_evaluation_model)
 - [Summac Code and Model - GitHub](https://github.com/tingofurro/summac)
-- [SCALE Code and Model - GutHub](https://github.com/asappresearch/scale-score)
+- [SCALE Code and Model - GitHub](https://github.com/asappresearch/scale-score)
 
 ## Definitions and Notes
 
