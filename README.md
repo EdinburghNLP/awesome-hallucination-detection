@@ -17,6 +17,11 @@
 
 ## Papers and Summaries
 
+### [LLMs hallucinate graphs too: a structural perspective](https://arxiv.org/abs/2409.00159)
+- **Metrics:**  Graph edit distance, spectral distance, distance between degree distributions.
+- **Datasets:** Graph Atlas Distance
+- **Comments:** This benchmark presents the capability to directly prompt LLMs for known graph structures. Distances from the outputs of LLMs and of the ground truth graphs are studied. A ranking based on graph edit distance sorts LLMs in their hallucination amplitude.
+
 ### [HallusionBench: An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models](https://arxiv.org/pdf/2310.14566.pdf)
 - **Metrics:**  Accuracy.
 - **Datasets:** HallusionBench
