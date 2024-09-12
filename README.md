@@ -329,8 +329,7 @@
 - **Metrics:** For detection: Precision, Recall, F1. For Mitigation: Ratio of self-contradiction removed, Ratio of informative facts retained, perplexity increased.
 - **Datasets:** Custom Open-domain Text Generation dataset, LLM-generated encyclopedic text descriptions for Wikipedia entities, PopQA.
 
-### [Detecting hallucinations in large language models using semantic entropy
-](https://www.nature.com/articles/s41586-024-07421-0)
+### [Detecting hallucinations in large language models using semantic entropy](https://www.nature.com/articles/s41586-024-07421-0)
 - **Metrics:** For detection: AUROC, AURAC.
 - **Datasets:** QA: TriviaQA, SQuAD, BioASQ, NQ-Open, SVAMP. FactualBio, a biography-generation dataset, accompanying this paper.
 
