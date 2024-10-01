@@ -17,6 +17,11 @@
 
 ## Papers and Summaries
 
+### [Lynx: An Open Source Hallucination Evaluation Model](https://arxiv.org/abs/2409.00159)
+- **Metrics:** Accuracy
+- **Datasets:** HaluBench (consists of ~500 random samples from CovidQA, PubMedQA, DROP, FinanceBench and another set of perturbations based on the retrieved samples)
+- **Comments:** Proposes a resource HaluBench and Lynx (Llama3-70bn-instruct based model) for a reference-free metric evaluation. The focus is on instrinsic hallucination evaluation, meaning answers faithful to the given context instead of world knowledge. Hallucinated examples for HaluBench are gathered with GPT-4o. Training of Lynx is done on 2400 samples from RAGTruth, DROP, CovidQA, PubMedQA with GPT4o generated reasoning as part of the training samples. Evaluation is done by extracting a response-level binary label indicating response's faithfulness to the context.
+
 ### [LLMs hallucinate graphs too: a structural perspective](https://arxiv.org/abs/2409.00159)
 - **Metrics:**  Graph edit distance, spectral distance, distance between degree distributions.
 - **Datasets:** Graph Atlas Distance
