@@ -17,6 +17,11 @@
 
 ## Papers and Summaries
 
+### [GraphEval: A Knowledge-Graph Based LLM Hallucination Evaluation Framework](https://arxiv.org/abs/2407.10793)
+- **Metrics:** Rouge
+- **Datasets:** SummEval, QAGS-C, QAGS-X
+- **Comments:** Proposes a hallucination detection *GraphEval* and corection framework *GraphCorrect*. Hallucination detection is done by extracting KG triples from an LLM output and comparing the entailment of the triples with respect to the provided context. Correction is done by taking triples likely to contain hallucinations (entailment below 0.5) are then prompting an LLM to generate a new, factually correct triple with respect to a provided context. Afterwards in a seperate inference pass an LLM is prompted to replace the information in the non-factual LLM output based on the corrected triple. Underlying NLI models that are used for experiments are *HHEM* (DeBERTaV3), *TRUE* and *TrueTeacher* (T5-XXL). The underlying LLM used is Claude2. Final experiments are conducted by computing Rouge scores between reference text and the proposed mitigation method.
+
 ### [Lynx: An Open Source Hallucination Evaluation Model](https://arxiv.org/abs/2409.00159)
 - **Metrics:** Accuracy
 - **Datasets:** HaluBench (consists of ~500 random samples from CovidQA, PubMedQA, DROP, FinanceBench and another set of perturbations based on the retrieved samples)
