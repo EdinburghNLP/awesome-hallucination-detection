@@ -17,6 +17,11 @@
 
 ## Papers and Summaries
 
+### [Leveraging Hallucinations to Reduce Manual Prompt Dependency in Promptable Segmentation](https://arxiv.org/abs/2408.15205)
+- **Metrics:** MAE, F_{beta}, S_{alpha}
+- **Datasets:** CHAMELEON, CAMO, COD10K, CVC-ColonDB, Kvasir, ISIC
+- **Comments:** The first study does not regard hallucinations as purely negative, but as a common aspect of model pre-training. Unlike previous approaches that directly eliminate hallucinations, ProMaC first stimulates hallucinations to mine the prior knowledge from model pre-training to gather task-relevant information in images. Then, it eliminates irrelevant hallucinations to mitigate their negative impact. The effectiveness of this method has been demonstrated in multiple challenging segmentation tasks.
+
 ### [GraphEval: A Knowledge-Graph Based LLM Hallucination Evaluation Framework](https://arxiv.org/abs/2407.10793)
 - **Metrics:** Accuracy (detection), Rouge (correction)
 - **Datasets:** SummEval, QAGS-C, QAGS-X
