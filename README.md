@@ -17,6 +17,10 @@
 
 ## Papers and Summaries
 
+### [DeCoRe: Decoding by Contrasting Retrieval Heads to Mitigate Hallucinations](https://arxiv.org/abs/2410.18860)
+- **Metrics:** MC1, MC2, MC3 scores for TruthfulQA multiple-choice task; %Truth, %Info, %Truth*Info for TruthfulQA open-ended generation task; subspan Exact Match for the open-domain QA tasks (NQ-Open, NQ-Swap, TriviaQA, PopQA, MuSiQue); accuracy for MemoTrap; Prompt-level and Instruction-level accuracies for IFEval.
+- **Datasets:** TruthfulQA, NQ-Open, NQ-Swap, TriviaQA, PopQA, MemoTrap, IFEval, MuSiQue
+
 ### [Leveraging Hallucinations to Reduce Manual Prompt Dependency in Promptable Segmentation](https://arxiv.org/abs/2408.15205)
 - **Metrics:** MAE, F_{beta}, S_{alpha}
 - **Datasets:** CHAMELEON, CAMO, COD10K, CVC-ColonDB, Kvasir, ISIC
@@ -347,10 +351,6 @@
 ### [Detecting hallucinations in large language models using semantic entropy](https://www.nature.com/articles/s41586-024-07421-0)
 - **Metrics:** For detection: AUROC, AURAC.
 - **Datasets:** QA: TriviaQA, SQuAD, BioASQ, NQ-Open, SVAMP. FactualBio, a biography-generation dataset, accompanying this paper.
-
-### [DeCoRe: Decoding by Contrasting Retrieval Heads to Mitigate Hallucinations](https://arxiv.org/abs/2410.18860)
-- **Metrics:** MC1, MC2, MC3 scores for TruthfulQA multiple-choice task; %Truth, %Info, %Truth*Info for TruthfulQA open-ended generation task; subspan Exact Match for the open-domain QA tasks (NQ-Open, NQ-Swap, TriviaQA, PopQA, MuSiQue); accuracy for MemoTrap; Prompt-level and Instruction-level accuracies for IFEval.
-- **Datasets:** TruthfulQA, NQ-Open, NQ-Swap, TriviaQA, PopQA, MemoTrap, IFEval, MuSiQue
 
 
 ## Domain-specific Entries
