@@ -17,6 +17,11 @@
 
 ## Papers and Summaries
 
+### [Quantifying Uncertainty in Answers from any Language Model and Enhancing their Trustworthiness](https://aclanthology.org/2024.acl-long.283/)
+- **Metrics:** Accuracy, Precision/Recall/Auroc
+- **Datasets:** TriviaQA, GSM8k, SVAMP, Common-sense QA
+- **Comments:** LLM uncertainty estimation technique called BSDetector that combines self-reflection certainty and observed consistency into a single confidence score. Detects incorrect/hallucinated LLM responses with high precision/recall, and can also automatically boost the accuracy of LLM responses. 
+
 ### [DeCoRe: Decoding by Contrasting Retrieval Heads to Mitigate Hallucinations](https://arxiv.org/abs/2410.18860)
 - **Metrics:** MC1, MC2, MC3 scores for TruthfulQA multiple-choice task; %Truth, %Info, %Truth*Info for TruthfulQA open-ended generation task; subspan Exact Match for the open-domain QA tasks (NQ-Open, NQ-Swap, TriviaQA, PopQA, MuSiQue); accuracy for MemoTrap; Prompt-level and Instruction-level accuracies for IFEval.
 - **Datasets:** TruthfulQA, NQ-Open, NQ-Swap, TriviaQA, PopQA, MemoTrap, IFEval, MuSiQue
