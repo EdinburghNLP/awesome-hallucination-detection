@@ -17,7 +17,7 @@
 
 ## Papers and Summaries
 
-### [Do Not Design, Learn: A Trainable Scoring Function for Uncertainty Estimation in Generative LLMs(https://arxiv.org/pdf/2406.11278)
+### [Do Not Design, Learn: A Trainable Scoring Function for Uncertainty Estimation in Generative LLMs](https://arxiv.org/pdf/2406.11278)
 - **Metrics:** AUROC, PRR
 - **Datasets:** TriviaQA, GSM8k, NaturalQA, WebQA
 - **Comments:** The LLM uncertainty estimation technique called LARS trains an encoder-based transformer that takes a query, generation, and token probabilities as input and returns an uncertainty score as output
