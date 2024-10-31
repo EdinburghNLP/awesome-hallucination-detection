@@ -17,6 +17,11 @@
 
 ## Papers and Summaries
 
+
+### [MARS: Meaning-Aware Response Scoring for Uncertainty Estimation in Generative LLMs](https://aclanthology.org/2024.acl-long.419.pdf)
+- **Metrics:** AUROC
+- **Datasets:** TriviaQA, NaturalQA, WebQA
+- **Comments:** The LLM uncertainty estimation technique called MARS replaces length-normalized probability scoring by assigning greater weights to tokens that contribute more significantly to correctness. 
 ### [Quantifying Uncertainty in Answers from any Language Model and Enhancing their Trustworthiness](https://aclanthology.org/2024.acl-long.283/)
 - **Metrics:** Accuracy, Precision/Recall/Auroc
 - **Datasets:** TriviaQA, GSM8k, SVAMP, Common-sense QA
