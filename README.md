@@ -17,6 +17,10 @@
 
 ## Papers and Summaries
 
+### [Steering Knowledge Selection Behaviours in LLMs via SAE-Based Representation Engineering](https://arxiv.org/abs/2410.15999)
+- **Metrics:** Exact Match
+- **Datasets:** NQSwap, Macnoise
+- **Comments:** The first work that uses sparse auto-encoders (SAEs) to enhance both the usage of contextual and parametric knowledge.
 
 ### [MARS: Meaning-Aware Response Scoring for Uncertainty Estimation in Generative LLMs](https://aclanthology.org/2024.acl-long.419.pdf)
 - **Metrics:** AUROC
