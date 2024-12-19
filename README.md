@@ -372,6 +372,9 @@
 - **Metrics:** For detection: AUROC, AURAC.
 - **Datasets:** QA: TriviaQA, SQuAD, BioASQ, NQ-Open, SVAMP. FactualBio, a biography-generation dataset, accompanying this paper.
 
+### [CAST: Cross-modal Alignment Similarity Test for Vision Language Models](https://arxiv.org/abs/2409.11007)
+- **Metrics:** Propose CAST, a simple self-consistency metric that seeks to evaluate whether multimodal models are consistent across modalities. This works in two stage, in the first stage the models generate similarities/true statements comparing two inputs, and in the second stage the model judges its own output for truthfulness. A consistent model should therefore always evaluate its own outputs as true.
+
 
 ## Domain-specific Entries
 
