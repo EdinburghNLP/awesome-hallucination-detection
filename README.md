@@ -36,6 +36,37 @@
 - **Datasets:** Proprietary financial tables and queries.
 - **Comments:** Shows how grounding LLMs in relevant financial data and applying multi-metric validation can exceed 90% confident correctness. Demonstrates an effective approach to curbing hallucinations in finance.
 
+### [Hallucination Detection: A Probabilistic Framework Using Embeddings Distance Analysis](https://arxiv.org/abs/2502.08663)
+  * **Metrics**: Accuracy, F1-score (hallucination detection performance).
+  * **Datasets**: Synthetic Q&A dataset (generated with Llama2-7B and Llama3-8B) labeled for hallucinated vs. non-hallucinated responses.
+  * **Comments**: Proposes analyzing the embedding space of LLM outputs to detect hallucinations. By measuring Minkowski distance between embedded keywords in genuine vs. hallucinated answers, it uncovers structural differences and achieves competitive hallucination detection accuracy (~66%) without external fact-checking.
+
+### [Detecting and Mitigating Hallucination in Large Vision-Language Models via Fine-Grained AI Feedback](https://arxiv.org/abs/2404.14233)
+  * **Metrics**: Accuracy, Precision/Recall, F1 (hallucination detection on benchmarks like MHaluBench, MFHaluBench); Hallucination Rate and metrics such as CHAIR, Cover, Hal, Cog (for generation benchmarks like Object HalBench and AMBER).
+  * **Datasets**: MHaluBench, MFHaluBench (vision-language hallucination detection datasets); Object HalBench, AMBER, MMHal-Bench, POPE (hallucination mitigation benchmarks for LVLMs).
+  * **Comments**: Introduces *HSA-DPO*, a severity-aware direct preference optimization method that uses fine-grained AI feedback to label hallucination severity and prioritize critical errors in training. This approach achieves state-of-the-art performance in detecting visual hallucinations (outperforming GPT-4V and other models) and significantly lowers hallucination occurrence in generated outputs (e.g., 36% reduction on AMBER, 76% on Object HalBench versus the base model).
+
+### [Pelican: Correcting Hallucination in Vision-LLMs via Claim Decomposition and Program of Thought Verification](https://aclanthology.org/2024.emnlp-main.470/)
+  * **Metrics**: Hallucination rate reduction (%) and factual accuracy improvements on multiple vision–language instruction benchmarks (e.g., MMHal-Bench, GAVIE, MME).
+  * **Datasets**: MMHal-Bench, GAVIE (hallucination evaluation benchmarks for LVLMs); MME (general vision-language understanding benchmark).
+  * **Comments**: Proposes a framework (*Pelican*) that detects and mitigates visual hallucinations through claim verification. It decomposes an image-grounded claim into sub-claims and uses *program-of-thought* (code execution with external tools) to verify each sub-claim’s truth. An LLM then assesses overall consistency. Pelican significantly reduces hallucination rates (approx. 8–32% drop across various LVLMs, and 27% lower than prior mitigation methods) while maintaining or improving the models’ factual accuracy in following visual instructions.
+
+### [Distinguishing Ignorance from Error in LLM Hallucinations](https://arxiv.org/abs/2410.22071)
+  * **Metrics**: Hallucination type distribution (prevalence of hallucinations despite knowledge vs. due to lack of knowledge); classification accuracy distinguishing HK+ vs. HK- cases; improvements in detection/mitigation when handling these types separately.
+  * **Datasets**: *WACK* (Wrong Answers despite Correct Knowledge) – a constructed dataset based on TriviaQA and NaturalQuestions, containing QA instances labeled as HK- (hallucination caused by missing knowledge) or HK+ (hallucination even though the model knows the answer) for specific LLMs.
+  * **Comments**: Investigates two distinct causes of hallucination: when the model truly doesn’t know the answer (ignorance) vs. when it knows the answer but still responds incorrectly (error). Introduces an automated approach to generate model-specific labeled examples (the WACK dataset) by testing the model under various prompted scenarios. Shows that a simple classifier on the LLM’s internal representations can differentiate these cases, and that tailoring detection/mitigation to a model’s HK+ (knowledgeable error) cases yields better results than a one-size-fits-all approach.
+
+### [A Genetic Approach to Mitigate Hallucination in Generative IR](https://arxiv.org/abs/2409.00085)
+  * **Metrics**: Factuality verification accuracy (FEVER-style support/refute classification of answers), and answer relevance metrics (n-gram overlap, ROUGE/NDCG) in open-domain QA.
+  * **Datasets**: TREC Deep Learning 2019 & 2020 (passage ranking QA tasks) and a subset of MS MARCO Dev (for open-domain answer generation).
+  * **Comments**: Models the generative information retrieval process as a genetic algorithm (called *GAuGE*: Genetic Approach using Grounded Evolution) to reduce hallucinations in answers. Candidate answers evolve through iterative “mutation” and selection, guided by a simple n-gram overlap fitness score to ensure consistency with retrieved documents. Experiments across several IR datasets show that GAuGE produces highly relevant answers with significantly fewer hallucinated statements (substantially higher fact verification scores) compared to standard RAG-style generation, all without sacrificing answer relevance.
+
+### [MIND: Unsupervised Modeling of Internal States for Hallucination Detection of Large Language Models](https://arxiv.org/abs/2311.09398)
+  * **Metrics**: Hallucination detection accuracy and F1-score (token-level and response-level) on the new HELM benchmark; detection latency and throughput.
+  * **Datasets**: Wikipedia (used to extract pseudo training data); **HELM** (Hallucination Evaluation for multiple LLMs) – a benchmark with outputs from six different LLMs on Wikipedia-derived prompts, annotated with human labels for hallucinated content along with each model’s internal states.
+  * **Comments**: Introduces an *unsupervised, real-time* hallucination detection framework that taps into an LLM’s own hidden states. MIND leverages unannotated Wikipedia text to auto-generate training pairs (prompt, LLM output with hallucination label inferred) and trains a lightweight MLP to predict hallucinations from the model’s activations during inference. This approach avoids heavy external fact-checkers, greatly speeds up detection, and remains model-agnostic. On the HELM benchmark, MIND demonstrates strong hallucination detection performance while significantly reducing computational overhead compared to prior post-processing methods.
+
+
 
 
 
