@@ -11,7 +11,7 @@
 
 
 
-### [MedHallu: A Comprehensive Benchmark for Detecting Medical Hallucinations in LLMs](https://arxiv.org/abs/2510.12345)
+### [MedHallu: A Comprehensive Benchmark for Detecting Medical Hallucinations in LLMs](https://arxiv.org/abs/2502.14302)
 - **Metrics:** Binary hallucination detection (Precision, Recall, F1).
 - **Datasets:** *MedHallu* – derived from PubMedQA, containing 10k QA pairs with deliberately planted plausible hallucinations.
 - **Comments:** Presents a large-scale medical-focused hallucination detection benchmark. Evaluations show that, on the hardest subset, even top models like GPT-4 achieve only ~0.625 F1 in detecting subtle falsehoods, pointing to the difficulty of medical hallucination detection.
