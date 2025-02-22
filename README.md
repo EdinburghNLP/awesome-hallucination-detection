@@ -9,6 +9,11 @@
 - **Datasets:** NQSwap, Macnoise
 - **Comments:** The first work that uses sparse auto-encoders (SAEs) to enhance both the usage of contextual and parametric knowledge.
 
+### [DeCoRe: Decoding by Contrasting Retrieval Heads to Mitigate Hallucinations](https://arxiv.org/abs/2410.18860)
+- **Metrics:** MC1, MC2, MC3 scores for TruthfulQA multiple-choice task; %Truth, %Info, %Truth*Info for TruthfulQA open-ended generation task; subspan Exact Match for the open-domain QA tasks (NQ-Open, NQ-Swap, TriviaQA, PopQA, MuSiQue); accuracy for MemoTrap; Prompt-level and Instruction-level accuracies for IFEval.
+- **Datasets:** TruthfulQA, NQ-Open, NQ-Swap, TriviaQA, PopQA, MemoTrap, IFEval, MuSiQue
+
+
 
 
 ### [MedHallu: A Comprehensive Benchmark for Detecting Medical Hallucinations in LLMs](https://arxiv.org/abs/2502.14302)
@@ -48,10 +53,6 @@
 - **Metrics:** Accuracy, Precision/Recall/Auroc
 - **Datasets:** TriviaQA, GSM8k, SVAMP, Common-sense QA
 - **Comments:** LLM uncertainty estimation technique called BSDetector that combines self-reflection certainty and observed consistency into a single confidence score. Detects incorrect/hallucinated LLM responses with high precision/recall, and can also automatically boost the accuracy of LLM responses. 
-
-### [DeCoRe: Decoding by Contrasting Retrieval Heads to Mitigate Hallucinations](https://arxiv.org/abs/2410.18860)
-- **Metrics:** MC1, MC2, MC3 scores for TruthfulQA multiple-choice task; %Truth, %Info, %Truth*Info for TruthfulQA open-ended generation task; subspan Exact Match for the open-domain QA tasks (NQ-Open, NQ-Swap, TriviaQA, PopQA, MuSiQue); accuracy for MemoTrap; Prompt-level and Instruction-level accuracies for IFEval.
-- **Datasets:** TruthfulQA, NQ-Open, NQ-Swap, TriviaQA, PopQA, MemoTrap, IFEval, MuSiQue
 
 ### [Leveraging Hallucinations to Reduce Manual Prompt Dependency in Promptable Segmentation](https://arxiv.org/abs/2408.15205)
 - **Metrics:** MAE, F_{beta}, S_{alpha}
