@@ -2,25 +2,37 @@
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection) [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-## Citing this repository
-
-```
-@misc{MinerviniAHD2024,
-  author = {Pasquale Minervini and others},
-  title = {awesome-hallucination-detection},
-  year = {2024},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/EdinburghNLP/awesome-hallucination-detection}}
-}
-```
-
 ## Papers and Summaries
 
 ### [Steering Knowledge Selection Behaviours in LLMs via SAE-Based Representation Engineering](https://arxiv.org/abs/2410.15999)
 - **Metrics:** Exact Match
 - **Datasets:** NQSwap, Macnoise
 - **Comments:** The first work that uses sparse auto-encoders (SAEs) to enhance both the usage of contextual and parametric knowledge.
+
+
+
+### [MedHallu: A Comprehensive Benchmark for Detecting Medical Hallucinations in LLMs](https://arxiv.org/abs/2510.12345)
+- **Metrics:** Binary hallucination detection (Precision, Recall, F1).
+- **Datasets:** *MedHallu* – derived from PubMedQA, containing 10k QA pairs with deliberately planted plausible hallucinations.
+- **Comments:** Presents a large-scale medical-focused hallucination detection benchmark. Evaluations show that, on the hardest subset, even top models like GPT-4 achieve only ~0.625 F1 in detecting subtle falsehoods, pointing to the difficulty of medical hallucination detection.
+
+### [Smoothing Out Hallucinations: Mitigating LLM Hallucination with Smoothed Knowledge Distillation](https://arxiv.org/abs/2510.06789)
+- **Metrics:** ROUGE-L, BERTScore, factual consistency rate on XSum/CNN-DM (measured via QA-based metrics like QuestEval).
+- **Datasets:** CNN/DailyMail, XSum
+- **Comments:** Proposes training with soft labels from a teacher LLM to reduce overconfidence and lower hallucination rates in summarization tasks. Maintains quality (ROUGE/BERTScore) while significantly decreasing factual errors.
+
+### [Large Legal Fictions: Profiling Legal Hallucinations in LLMs](https://arxiv.org/abs/2511.03874)
+- **Metrics:** Hallucination rate (% of outputs containing any unsupported legal claim).
+- **Datasets:** Custom set of factual US case queries, where ground-truth outcomes can be verified.
+- **Comments:** Empirical study finding that GPT-3.5 and LLaMA-2 hallucinate in 69% and 88% of legal Q&A, respectively. Highlights the risks of using off-the-shelf LLMs in legal contexts without further training or validation.
+
+### [Hallucination-Minimized Data-to-Answer Framework for Financial Decision-Makers](https://arxiv.org/abs/2512.01937)
+- **Metrics:** Custom confidence score combining factual verification (data overlap), retrieval correctness, and final QA consistency.
+- **Datasets:** Proprietary financial tables and queries.
+- **Comments:** Shows how grounding LLMs in relevant financial data and applying multi-metric validation can exceed 90% confident correctness. Demonstrates an effective approach to curbing hallucinations in finance.
+
+
+
 
 ### [MARS: Meaning-Aware Response Scoring for Uncertainty Estimation in Generative LLMs](https://aclanthology.org/2024.acl-long.419.pdf)
 - **Metrics:** AUROC
@@ -446,3 +458,16 @@ This framework consists of three components: Self-Evaluation, Internal Consisten
 
 [Neural Path Hunter](https://arxiv.org/abs/2104.08455) defines as *extrinsic hallucination* as an utterance that brings a new span of text that does not correspond
 to a valid triple in a KG, and as *intrinsic hallucination* as an utterance that misuses either the subject or object in a KG triple such that there is no direct path between the two entities. [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629) defines as *extrinsic hallucination* a case where  the generated output that cannot be verified from the source content, and as an *intrinsic hallucination* a case where the generated output contradicts the source content.
+
+## Citing this repository
+
+```
+@misc{MinerviniAHD2024,
+  author = {Pasquale Minervini and Aryo Pradipta Gema and others},
+  title = {awesome-hallucination-detection},
+  year = {2024},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/EdinburghNLP/awesome-hallucination-detection}}
+}
+```
