@@ -16,17 +16,17 @@
 - **Datasets:** *MedHallu* – derived from PubMedQA, containing 10k QA pairs with deliberately planted plausible hallucinations.
 - **Comments:** Presents a large-scale medical-focused hallucination detection benchmark. Evaluations show that, on the hardest subset, even top models like GPT-4 achieve only ~0.625 F1 in detecting subtle falsehoods, pointing to the difficulty of medical hallucination detection.
 
-### [Smoothing Out Hallucinations: Mitigating LLM Hallucination with Smoothed Knowledge Distillation](https://arxiv.org/abs/2510.06789)
+### [Smoothing Out Hallucinations: Mitigating LLM Hallucination with Smoothed Knowledge Distillation](https://arxiv.org/abs/2502.11306)
 - **Metrics:** ROUGE-L, BERTScore, factual consistency rate on XSum/CNN-DM (measured via QA-based metrics like QuestEval).
 - **Datasets:** CNN/DailyMail, XSum
 - **Comments:** Proposes training with soft labels from a teacher LLM to reduce overconfidence and lower hallucination rates in summarization tasks. Maintains quality (ROUGE/BERTScore) while significantly decreasing factual errors.
 
-### [Large Legal Fictions: Profiling Legal Hallucinations in LLMs](https://arxiv.org/abs/2511.03874)
+### [Large Legal Fictions: Profiling Legal Hallucinations in LLMs](https://arxiv.org/abs/2401.01301)
 - **Metrics:** Hallucination rate (% of outputs containing any unsupported legal claim).
 - **Datasets:** Custom set of factual US case queries, where ground-truth outcomes can be verified.
 - **Comments:** Empirical study finding that GPT-3.5 and LLaMA-2 hallucinate in 69% and 88% of legal Q&A, respectively. Highlights the risks of using off-the-shelf LLMs in legal contexts without further training or validation.
 
-### [Hallucination-Minimized Data-to-Answer Framework for Financial Decision-Makers](https://arxiv.org/abs/2512.01937)
+### [Hallucination-Minimized Data-to-Answer Framework for Financial Decision-Makers](https://arxiv.org/abs/2311.07592)
 - **Metrics:** Custom confidence score combining factual verification (data overlap), retrieval correctness, and final QA consistency.
 - **Datasets:** Proprietary financial tables and queries.
 - **Comments:** Shows how grounding LLMs in relevant financial data and applying multi-metric validation can exceed 90% confident correctness. Demonstrates an effective approach to curbing hallucinations in finance.
