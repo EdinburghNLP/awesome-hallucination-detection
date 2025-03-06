@@ -4,6 +4,11 @@
 
 ## Papers and Summaries
 
+### [Semantic Density: Uncertainty Quantification for Large Language Models through Confidence Measurement in Semantic Space](https://neurips.cc/virtual/2024/poster/95598)
+- **Metrics:** AUROC, AUPR
+- **Datasets:** CoQA, TriviaQA, SciQ, NQ
+- **Comments:** Proposes a new method, namely semantic density, to provide response-wise confidence/uncertainty scores for detecting LLM hallucinations. Semantic density extracts uncertainty/confidence information for each response from a probability distribution perspective in semantic space. It has no restriction on task types and is "off-the-shelf" for new models and tasks. Significant improvement over other SOTA methods are consistently observed across different datasets and base LLMs.
+
 ### [Steering Knowledge Selection Behaviours in LLMs via SAE-Based Representation Engineering](https://arxiv.org/abs/2410.15999)
 - **Metrics:** Exact Match
 - **Datasets:** NQSwap, Macnoise
