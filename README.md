@@ -4,6 +4,11 @@
 
 ## Papers and Summaries
 
+### [Kernel Language Entropy: Fine-grained Uncertainty Quantification for LLMs from Semantic Similarities](https://arxiv.org/abs/2405.20003)
+- **Metrics:** For detection: AUROC, AURAC.
+- **Datasets:** QA: TriviaQA, SQuAD, BioASQ, NQ, SVAMP.
+- **Comments:** This work presents a method for evaluating the semantic uncertainty of LLM responses. The approach generates multiple response samples and measures their semantic similarity, which is represented as a density matrix (semantic kernel). Semantic uncertainty is then quantified using the von Neumann entropy of this matrix. High uncertainty suggests potential hallucinations, alowing for their detection and mitigation.
+
 ### [Steering Knowledge Selection Behaviours in LLMs via SAE-Based Representation Engineering](https://arxiv.org/abs/2410.15999)
 - **Metrics:** Exact Match
 - **Datasets:** NQSwap, Macnoise
