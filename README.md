@@ -4,6 +4,11 @@
 
 ## Papers and Summaries
 
+### [♟️FactCheckmate: Preemptively Detecting and Mitigating Hallucinations in LMs](https://arxiv.org/abs/2410.02899)
+- **Metrics:** For detection: Acc.
+- **Datasets:** QA: NQ-Open, MMLU, MedMCQA, GSM8K.
+- **Comments:** This work introduces a lightweight classifier that detects hallucinations preemptively conditioning only on the input hidden states, before any text is generated. When hallucinations are predicted, it intervenes in these hidden states to steer the model toward more factual outputs.  Experiments show consistent improvements in factual accuracy across various LLMs, with minimal computational overhead.
+  
 ### [Kernel Language Entropy: Fine-grained Uncertainty Quantification for LLMs from Semantic Similarities](https://arxiv.org/abs/2405.20003)
 - **Metrics:** For detection: AUROC, AURAC.
 - **Datasets:** QA: TriviaQA, SQuAD, BioASQ, NQ, SVAMP.
