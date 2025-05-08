@@ -431,6 +431,8 @@
 ### [CAST: Cross-modal Alignment Similarity Test for Vision Language Models](https://arxiv.org/abs/2409.11007)
 - **Metrics:** Propose CAST, a simple self-consistency metric that seeks to evaluate whether multimodal models are consistent across modalities. This works in two stage, in the first stage the models generate similarities/true statements comparing two inputs, and in the second stage the model judges its own output for truthfulness. A consistent model should therefore always evaluate its own outputs as true.
 
+### [Uncertainty Quantification for Language Models: A Suite of Black-Box, White-Box, LLM Judge, and Ensemble Scorers](https://arxiv.org/abs/2504.19254)
+- **Metrics:** Black-box (consistency-based scorers): non-contradiction probability, normalized semantic negentropy, normalized cosine similarity, BERTSCore, BLEURT, and exact match rate. White-box (token-probability-based) scorers: minimum token probability, length-normalized token probability. LLM-as-a-Judge scorers: categorical (incorrect/uncertain/correct). Proposed novel, tunable ensemble scorer that is a weighted average of any combination of black-box, white-box, and LLM-as-a-Judge scorers, where weights can be tuned using a user-provided set of graded LLM responses. 
 
 ## Domain-specific Entries
 
@@ -487,6 +489,8 @@ This framework consists of three components: Self-Evaluation, Internal Consisten
 - [Vectara - Cut the Bull…. Detecting Hallucinations in Large Language Models](https://vectara.com/cut-the-bull-detecting-hallucinations-in-large-language-models/)
 - [Vectara LLM Hallucination Leaderboard](https://github.com/vectara/hallucination-leaderboard)
 - [TofuEval: Evaluating Hallucinations of LLMs on Topic-Focused Dialogue Summarization](https://arxiv.org/abs/2402.13249)
+- [UQLM: Uncertainty Quantification for Language Models](https://github.com/cvs-health/uqlm)
+
 
 ## Open Source Models for Measuring Hallucinations
 - [MiniCheck Code and Model - GitHub](https://github.com/Liyan06/MiniCheck)
