@@ -4,6 +4,21 @@
 
 ## Papers and Summaries
 
+### [Similarity-Distance-Magnitude Universal Verification](https://arxiv.org/abs/2502.20167)
+- **Metrics:** Index-conditional calibration (i.e., joint prediction- and class-conditional calibration at a given alpha' value)
+- **Datasets:** Factcheck (Azaria and Mitchell, 2023); sentiment; MMLU; MMLU-pro (importantly these include distribution-shifted and out-of-distribution evaluations)
+- **Comments:** Introduces Similarity-Distance-Magnitude (SDM) activation functions, SDM calibration, and SDM networks, which are neural networks (e.g., LLMs) with uncertainty-aware verification and interpretability-by-exemplar as intrinsic properties. An example of an SDM estimator that can be used for hallucination detection when combined with retrieval (or other applicable grounding) is available via the [open-source Reexpress MCP server](https://github.com/ReexpressAI/reexpress_mcp_server). (2025)
+
+### [Coarse-to-Fine Memory Matching for Joint Retrieval and Classification](https://arxiv.org/abs/2012.02287)
+- **Metrics:** Accuracy and FEVER score
+- **Datasets:** FEVER and the 2-class analysis sets of Schuster et al. (2019)
+- **Comments:** Introduces interpretability-by-exemplar for multi-stage retrieval and classification with a single model, including feature detection via alignment of bi-encoded sequences. Includes a method for beam search through the search graph of bi- and cross-encoded sequences, and an early approach for constraining the output of a retrieval system based on dense matching into the support set. (This is, in effect, an early example of test-time compute with a Transformer language model. Instead of using reinforcement learning, multi-stage search is learned end-to-end via a contrastive loss over bi- and cross-encoded sequences.) (2020)
+
+### [Detecting Local Insights from Global Labels: Supervised & Zero-Shot Sequence Labeling via a Convolutional Decomposition](https://direct.mit.edu/coli/article/47/4/729/106772/Detecting-Local-Insights-from-Global-Labels)
+- **Metrics:** F_1, F_0.5, and accuracy against the ground-truth, as well as the model-approximations against the original model's predictions
+- **Datasets:** Grammatical error detection and sentiment datasets
+- **Comments:** Introduces instance-based, metric-learner approximations of neural network models and hard-attention mechanisms that can be constructed with task-specific inductive biases for effective semi-supervised learning (i.e., feature detection). These mechanisms combine to yield effective methods for interpretability-by-exemplar over the representation space of neural models. Direct relevance for hallucination detection (which is a classification task): This precedes SAE and other contrastive-representation-based interpretability methods, while providing an explicit connection between a test-instance and the training (support set) and providing a pathway for controlling for the epistemic uncertainty. The latter in particular is a limiting factor for the real-world application of many subsequent interpretability methods, including for hallucination detection tasks. (This was submitted to Computational Linguistics for review in 2020 and accepted for publication in 2021, with an additional presentation at EMNLP in 2021.)
+
 ### [♟️FactCheckmate: Preemptively Detecting and Mitigating Hallucinations in LMs](https://arxiv.org/abs/2410.02899)
 - **Metrics:** For detection: Acc.
 - **Datasets:** QA: NQ-Open, MMLU, MedMCQA, GSM8K.
