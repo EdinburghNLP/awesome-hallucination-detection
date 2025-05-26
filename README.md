@@ -4,6 +4,12 @@
 
 ## Papers and Summaries
 
+
+### [MultiHal: Multilingual Dataset for Knowledge-Graph Grounded Evaluation of LLM Hallucinations](https://arxiv.org/abs/2505.14101)
+- **Metrics:** Semantic similarity with sentence embeddings
+- **Datasets:** MultiHal
+- **Comments:** Introduces a new factual language modeling benchmark **MultiHal**. Building upon past benchmarks such as Shroom2024, HaluEval, HaluBench, TruthfulQA, Felm, Defan and SimpleQA, the aforementioned benchmarks are extended by mining relevant KG paths from Wikidata. **MultiHal** can be used for comparisons of knowledge updating methods such as RAG and KG-RAG, as well as factual evaluation using the mined KG paths.
+
 ### [Similarity-Distance-Magnitude Universal Verification](https://arxiv.org/abs/2502.20167)
 - **Metrics:** Index-conditional calibration (i.e., joint prediction- and class-conditional calibration at a given alpha' value)
 - **Datasets:** Factcheck (Azaria and Mitchell, 2023); sentiment; MMLU; MMLU-pro (importantly these include distribution-shifted and out-of-distribution evaluations)
