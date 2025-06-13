@@ -5,6 +5,13 @@
 ## Papers and Summaries
 
 
+### [Teaching with Lies: Curriculum DPO on Synthetic Negatives for Hallucination Detection](https://arxiv.org/abs/2505.17558v1)
+
+- **Metrics:** Accuracy, Precision, Recall, F1-score
+- **Datasets:** MedHallu, HaluEval, DROP, CovidQA, PubMedQA
+- **Comments:** Proposes **HaluCheck**, a family of 1B–3B parameter LLM detectors aligned via **Direct Preference Optimization (DPO)** using *synthetic hallucinated negatives* ranked by grounding difficulty (via MiniCheck). Introduces a **curriculum learning** strategy that transitions training from easier to harder negatives. Demonstrates up to **24% relative F1 gains** on MedHallu and HaluEval and strong zero-shot robustness—outperforming larger state-of-the-art models on DROP, CovidQA, and PubMedQA.
+
+
 ### [MultiHal: Multilingual Dataset for Knowledge-Graph Grounded Evaluation of LLM Hallucinations](https://arxiv.org/abs/2505.14101)
 - **Metrics:** Semantic similarity with sentence embeddings
 - **Datasets:** MultiHal
