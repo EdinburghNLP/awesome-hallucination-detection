@@ -4,7 +4,7 @@
 
 ## Papers and Summaries
 
-### [When Models Lie, We Learn: Multilingual Span-Level Hallucination Detection with PsiloQA](https://arxiv.org/abs/2510.04849)
+### [When Models Lie, We Learn: Multilingual Span-Level Hallucination Detection with PsiloQA](https://huggingface.co/papers/2510.04849)
 
 - **Metrics:** IoU, AP
 - **Datasets:** PsiloQA, RAG-Truth, Mu-SHROOM, FAVA, HalluEntity
