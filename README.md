@@ -4,6 +4,12 @@
 
 ## Papers and Summaries
 
+### [When Models Lie, We Learn: Multilingual Span-Level Hallucination Detection with PsiloQA](https://arxiv.org/abs/2510.04849)
+
+- **Metrics:** IoU, AP
+- **Datasets:** PsiloQA, RAG-Truth, Mu-SHROOM, FAVA, HalluEntity
+- **Comments:** Introduces **PsiloQA**, a large-scale dataset for **multilingual span-level hallucination detection** that serves both as a **benchmark** and a **training resource** for detector models. Building upon prior English-only and sequence-level datasets, **PsiloQA offers fine-grained supervision across 14 languages** through an automated three-stage pipeline of QA generation, hallucinated answer elicitation, and GPT-4o–based span annotation. It enables comprehensive evaluation and training of uncertainty-based, encoder-based, and LLM-based detectors, demonstrating strong cross-lingual generalization and cost-efficient scalability.
+
 
 ### [Teaching with Lies: Curriculum DPO on Synthetic Negatives for Hallucination Detection](https://arxiv.org/abs/2505.17558v1)
 
