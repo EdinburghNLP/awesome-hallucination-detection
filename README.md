@@ -4,6 +4,12 @@
 
 ## Papers and Summaries
 
+### [Learning to Reason for Hallucination Span Detection](https://arxiv.org/abs/2510.02173)
+
+- **Metrics:** Precision, Recall, F1-score
+- **Datasets:** RAGTruth
+- **Comments:** Proposes **RL4HS**, a reinforcement-learning framework for *span-level hallucination detection* that couples *chain-of-thought reasoning* with *span-level rewards*. Built on **Group Relative Policy Optimization (GRPO)** with **Class-Aware Policy Optimization (CAPO)** to address reward imbalance between hallucinated and non-hallucinated spans. On RAGTruth (QA, Summarization, Data-to-Text), RL4HS substantially improves fine-grained detection over CoT-based and supervised baselines.
+
 ### [When Models Lie, We Learn: Multilingual Span-Level Hallucination Detection with PsiloQA](https://huggingface.co/papers/2510.04849)
 
 - **Metrics:** IoU, AP
