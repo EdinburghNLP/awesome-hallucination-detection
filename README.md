@@ -4,6 +4,12 @@
 
 ## Papers and Summaries
 
+### [Joint Evaluation of Answer and Reasoning Consistency for Hallucination Detection in Large Reasoning Models](https://arxiv.org/abs/2506.04832)
+
+- **Metrics:** AUROC
+- **Dataset:** HotpotQA, TriviaQA, NQ-Open, SQuAD
+- **Comments:** Introduces **RACE**, the first black-box hallucination detection framework designed for **Large Reasoning Models (LRMs)** like DeepSeek-R1, addressing a critical gap overlooked by existing methods: hallucinations often arise from the model’s reasoning traces rather than its final answers. By jointly assessing reasoning consistency, answer uncertainty, reasoning–answer alignment, and internal coherence, RACE provides a fine-grained and robust detector that consistently outperforms state-of-the-art baselines across multiple datasets and model families. RACE demonstrates that effective hallucination detection for modern reasoning models must evaluate **both what the model answers and how it reasons**, and **pioneers the direction of black-box hallucination detection for LRMs**. Furthermore, RACE offers a user-friendly code interface to facilitate testing and improvement.
+
 ### [Learning to Reason for Hallucination Span Detection](https://arxiv.org/abs/2510.02173)
 
 - **Metrics:** Precision, Recall, F1-score
