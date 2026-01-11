@@ -35,6 +35,21 @@
 - **Datasets:** MultiHal
 - **Comments:** Introduces a new factual language modeling benchmark **MultiHal**. Building upon past benchmarks such as Shroom2024, HaluEval, HaluBench, TruthfulQA, Felm, Defan and SimpleQA, the aforementioned benchmarks are extended by mining relevant KG paths from Wikidata. **MultiHal** can be used for comparisons of knowledge updating methods such as RAG and KG-RAG, as well as factual evaluation using the mined KG paths.
 
+### [A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation](https://aclanthology.org/2025.naacl-long.158/)
+- **Metrics:** AUROC, AUC-PR, F1, Accuracy
+- **Datasets:** Wikibio-GPT3, FELM-Science, FactCheckGPT
+- **Comments:** Proposes **BTProp**, a probabilistic belief-tree framework that recursively expands a target statement into related claims and performs hidden Markov tree inference to reconcile LM self-beliefs with logical relations. Improves hallucination detection by 3-9% AUROC/AUC-PR over baselines across multiple benchmarks.
+
+### [Mitigating Hallucinations in Multi-modal Large Language Models via Image Token Attention-Guided Decoding](https://aclanthology.org/2025.naacl-long.75/)
+- **Metrics:** CHAIRs (CS), CHAIRi (CI), F1, GPT-4V correctness score, MME score
+- **Datasets:** CHAIR (COCO), POPE, GPT-4V-assisted evaluation (COCO), MME
+- **Comments:** Introduces **iTaD**, a plug-and-play decoding strategy that uses attention to image tokens to select layers and apply inter-layer contrastive decoding. By amplifying image grounding when attention drops, it consistently reduces hallucinations across multiple MLLMs and benchmarks.
+
+### [Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding in VLMs](https://aclanthology.org/2025.naacl-long.488/)
+- **Metrics:** mAP, Precision-Recall (grounding)
+- **Datasets:** HQH, TextVQA-X, VizWiz-G
+- **Comments:** Proposes **ContextualLens**, a training-free method that uses middle-layer contextual token embeddings to score answer-image alignment. It improves hallucination detection across diverse categories and produces precise grounding boxes for GVQA tasks.
+
 ### [Similarity-Distance-Magnitude Universal Verification](https://arxiv.org/abs/2502.20167)
 - **Metrics:** Index-conditional calibration (i.e., joint prediction- and class-conditional calibration at a given alpha' value)
 - **Datasets:** Factcheck (Azaria and Mitchell, 2023); sentiment; MMLU; MMLU-pro (importantly these include distribution-shifted and out-of-distribution evaluations)
