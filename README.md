@@ -299,6 +299,11 @@
 - **Metrics:** Sentence-level Hallucination Detection (AUC-PR), and Passage-level Hallucination Detection (Pearson and Spearman's correlation coefficients).
 - **Datasets:** Generated Wikipedia articles from WikiBio, with annotated hallucinations.
 
+### [INSIDE: LLMs' Internal States Retain the Power of Hallucination Detection](https://arxiv.org/abs/2402.03744)
+- **Metrics:** AUROC, PCC; Accuracy (TruthfulQA).
+- **Datasets:** CoQA, SQuAD, Natural Questions (NQ), TriviaQA, TruthfulQA.
+- **Comments:** Introduces **INSIDE**, a hallucination detection framework that operates on LLM internal states. Proposes **EigenScore**, which uses eigenvalues of the covariance matrix of multiple response embeddings to measure semantic consistency, and a test-time feature clipping strategy to truncate extreme activations that drive overconfident hallucinations. Evaluated on LLaMA and OPT models across QA benchmarks, improving detection compared with uncertainty- and lexical-similarity baselines.
+
 ### [The Internal State of an LLM Knows When it's Lying](https://arxiv.org/abs/2304.13734)
 - **Metrics:** Per-topic and average accuracy.
 - **Datasets:** The True-False Dataset contains true and false statements covering several topics -- Cities, Inventions, Chemical Elements, Animals, Companies, and Scientific Facts.
