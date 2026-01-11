@@ -201,7 +201,7 @@
 - **Datasets:** HaluBench (consists of ~500 random samples from CovidQA, PubMedQA, DROP, FinanceBench and another set of perturbations based on the retrieved samples)
 - **Comments:** Proposes a resource HaluBench and Lynx (Llama3-70bn-instruct based model) for a reference-free metric evaluation. The focus is on instrinsic hallucination evaluation, meaning answers faithful to the given context instead of world knowledge. Hallucinated examples for HaluBench are gathered with GPT-4o. Training of Lynx is done on 2400 samples from RAGTruth, DROP, CovidQA, PubMedQA with GPT4o generated reasoning as part of the training samples. Evaluation is done by extracting a response-level binary label indicating response's faithfulness to the context.
 
-### [LLMs hallucinate graphs too: a structural perspective](https://arxiv.org/abs/2409.00159)
+### [LLMs Prompted for Graphs: Hallucinations and Generative Capabilities](https://arxiv.org/abs/2409.00159)
 - **Metrics:**  Graph edit distance, spectral distance, distance between degree distributions.
 - **Datasets:** Graph Atlas Distance
 - **Comments:** This benchmark presents the capability to directly prompt LLMs for known graph structures. Distances from the outputs of LLMs and of the ground truth graphs are studied. A ranking based on graph edit distance sorts LLMs in their hallucination amplitude.
@@ -263,7 +263,7 @@
 - **Metrics:** Percentage of Wrong Answers (Hallucinations) and cases where "the model knows it's wrong" (Snowballed Hallucinations).
 - **Datasets:** Primality Testing, Senator Search, Graph Connectivity.
 
-### [Improving Language Models with Advantage-based Offline Policy Gradients](https://arxiv.org/abs/2305.14718)
+### [Leftover Lunch: Advantage-based Offline Reinforcement Learning for Language Models](https://arxiv.org/abs/2305.14718)
 - **Metrics:** Faithfulness evaluation for Knowledge-Grounded response generation on FaithDial -- FaithCritic, CoLA (Fluency), Dialog Engagement, Length-penalised TF-IDF Diversity. 
 - **Datasets:** Faithful Knowledge-Grounded Dialog: FaithDial, a more faithful subset of WoW.
 
@@ -287,11 +287,7 @@
 - **Metrics:** Accuracy: QA, Dialogue, Summarisation.
 - **Datasets:** HaluEval, a collection of generated and human-annotated hallucinated samples for evaluating the performance of LLMs in recognising hallucinations.
 
-### [Self-contradictory Hallucinations of Large Language Models: Evaluation, Detection and Mitigation](https://arxiv.org/abs/2305.15852)
-- **Metrics:** After generating sentence pairs, it measures precision, recall, and F1 score in detection tasks.
-- **Datasets:** 12 selected topics from Wikipedia.
-
-### [Mitigating Language Model Hallucination with Interactive Question-Knowledge Alignment](https://arxiv.org/abs/2305.13669)
+### [The Knowledge Alignment Problem: Bridging Human and External Knowledge for Large Language Models](https://arxiv.org/abs/2305.13669)
 - **Metrics:** *Coverage*: a binary metric that determines whether all the correct gold answer values are included in the generated value. *Hallucination*: a binary indicator that assesses the presence of generated values that do not exist in the question values and gold grounding values. *User Simulator*: user simulator as an "oracle" language model with access to attribution information about the target answer.
 - **Datasets:** FuzzyQA, a dataset based on HybridDialogue and MuSiQue where complex questions were simplified using ChatGPT.
 
@@ -307,7 +303,7 @@
 - **Metrics:** Per-topic and average accuracy.
 - **Datasets:** The True-False Dataset contains true and false statements covering several topics -- Cities, Inventions, Chemical Elements, Animals, Companies, and Scientific Facts.
 
-### [Chain of Knowledge: A Framework for Grounding Large Language Models with Structured Knowledge Bases](https://arxiv.org/abs/2305.13269)
+### [Chain-of-Knowledge: Grounding Large Language Models via Dynamic Knowledge Adapting over Heterogeneous Sources](https://arxiv.org/abs/2305.13269)
 - **Metrics:** Exact Match.
 - **Datasets:** FEVER, Adversarial HotpotQA.
 
@@ -423,9 +419,10 @@
 - **Metrics:** Humand and GPT-4 evaluations.
 - **Datasets:** HalluQA (which they propose), and mention TruthfulQA, ChineseFactEval, HaluEval.
 
-### [On Faithfulness and Factuality in Abstractive Summarization](https://arxiv.org/abs/2305.11747)
-- **Metrics:** ROUGE, BERTScore; human assessment (identify hallucinatory spans, and whether it's intrinsic or extrinsic) -- *intrinsic hallucinations* are manipulations of the information in the input document, while *extrinsic hallucinations* are information not directly inferable from the input document. Humans were asked to annotate intrinsic and extrinsic hallucinations.
-- **Datasets:** XSum.
+### [On Faithfulness and Factuality in Abstractive Summarization](https://arxiv.org/abs/2005.00661)
+- **Metrics:** Human annotations of hallucinated spans (intrinsic/extrinsic) and factuality (with external evidence); ROUGE-1/2/L; BERTScore; textual entailment; QA-based consistency; Spearman correlation with human scores.
+- **Datasets:** XSum (BBC articles); 500 test articles sampled for human evaluation (2,500 document-summary pairs).
+- **Comments:** Large-scale human study of hallucinations in extreme summarization; finds extrinsic hallucinations frequent (including in gold summaries) and textual entailment correlates best with human faithfulness/factuality versus ROUGE/BERTScore/QA.
 
 ### [QuestEval: Summarization Asks for Fact-based Evaluation](https://arxiv.org/abs/2103.12693)
 - **Metrics:** QuestEval (proposed in this work), for testing for *consistency*, *coherence*, *fluency*, and *relevance*. ROUGE, BLUE, METEOR, BERTScore. SummaQA, QAGS.
@@ -442,10 +439,6 @@
 ### [Understanding Factuality in Abstractive Summarization with FRANK: A Benchmark for Factuality Metrics](https://arxiv.org/abs/2104.13346)
 - **Metrics:** BERTScore, FEQA, QGFS, DAE, FactCC
 - **Datasets:** Proposed a new dataset FRANK: human annotated factual errors for CNN/DM and XSum dataset
-
-### [TRUE: Re-evaluating Factual Consistency Evaluation](https://aclanthology.org/2022.dialdoc-1.19/)
-- **Metrics:** Q², ANLI, SummaC, BLEURT, QuestEval, FactCC, BARTScore, BERTScore
-- **Datasets:** Consolidation of 11 different human annotated datasets for fctual consistency.
 
 ### [The Curious Case of Hallucinatory (Un)answerability: Finding Truths in the Hidden States of Over-Confident Large Language Models](https://aclanthology.org/2023.emnlp-main.220/)
 - **Metrics:** (classification) F-1, Exact Match, (token) F-1
