@@ -50,6 +50,26 @@
 - **Datasets:** HQH, TextVQA-X, VizWiz-G
 - **Comments:** Proposes **ContextualLens**, a training-free method that uses middle-layer contextual token embeddings to score answer-image alignment. It improves hallucination detection across diverse categories and produces precise grounding boxes for GVQA tasks.
 
+### [HALoGEN: Fantastic LLM Hallucinations and Where to Find Them](https://aclanthology.org/2025.acl-long.71/)
+- **Metrics:** Hallucination Score, Response Ratio, Utility Score, FActScore (biographies)
+- **Datasets:** HALoGEN (10,923 prompts across 9 tasks: code packages, scientific attribution, summarization, simplification, biographies, historical events, false presuppositions, rationalization binary/numerical)
+- **Comments:** Introduces a multi-domain hallucination benchmark with task-specific decomposition and verification pipelines that score atomic facts at scale. Provides a Type A/B/C error taxonomy tied to training-data provenance for analyzing hallucination sources.
+
+### [Visual Evidence Prompting Mitigates Hallucinations in Large Vision-Language Models](https://aclanthology.org/2025.acl-long.205/)
+- **Metrics:** Accuracy, CHAIR
+- **Datasets:** POPE, AMBER, RPE (Relation Probing Evaluation built from Visual Genome)
+- **Comments:** Proposes visual evidence prompting that injects outputs from object detection and scene graph models as structured prompts to reduce object and relation hallucinations in LVLMs. Introduces RPE to assess relation hallucination.
+
+### [ICRProbe: Tracking Hidden State Dynamics for Reliable Hallucination Detection in LLMs](https://aclanthology.org/2025.acl-long.880/)
+- **Metrics:** AUROC
+- **Datasets:** HaluEval, SQuAD, TriviaQA, HotpotQA
+- **Comments:** Defines the ICR Score (Information Contribution to Residual Stream) and an ICR Probe that aggregates layer-wise residual updates for reference-free hallucination detection, outperforming prior hidden-state baselines with a lightweight MLP.
+
+### [HalluLens: LLM Hallucination Benchmark](https://aclanthology.org/2025.acl-long.1176/)
+- **Metrics:** False refusal rate, hallucination rate, correct answer rate, Precision, Recall@K, F1@K, false acceptance rate
+- **Datasets:** HalluLens (PreciseWikiQA, LongWiki, NonExistentRefusal with MixedEntities/GeneratedEntities)
+- **Comments:** Introduces a taxonomy separating intrinsic vs. extrinsic hallucinations and a benchmark with dynamically generated extrinsic tasks to reduce data leakage. Provides new evaluation tasks for short QA, long-form QA, and knowledge-gap refusal.
+
 ### [Similarity-Distance-Magnitude Universal Verification](https://arxiv.org/abs/2502.20167)
 - **Metrics:** Index-conditional calibration (i.e., joint prediction- and class-conditional calibration at a given alpha' value)
 - **Datasets:** Factcheck (Azaria and Mitchell, 2023); sentiment; MMLU; MMLU-pro (importantly these include distribution-shifted and out-of-distribution evaluations)
