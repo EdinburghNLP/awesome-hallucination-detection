@@ -171,16 +171,6 @@
   * **Metrics**: Factuality verification accuracy (FEVER-style support/refute classification of answers), and answer relevance metrics (n-gram overlap, ROUGE/NDCG) in open-domain QA.
   * **Datasets**: TREC Deep Learning 2019 & 2020 (passage ranking QA tasks) and a subset of MS MARCO Dev (for open-domain answer generation).
   * **Comments**: Models the generative information retrieval process as a genetic algorithm (called *GAuGE*: Genetic Approach using Grounded Evolution) to reduce hallucinations in answers. Candidate answers evolve through iterative “mutation” and selection, guided by a simple n-gram overlap fitness score to ensure consistency with retrieved documents. Experiments across several IR datasets show that GAuGE produces highly relevant answers with significantly fewer hallucinated statements (substantially higher fact verification scores) compared to standard RAG-style generation, all without sacrificing answer relevance.
-
-### [MIND: Unsupervised Modeling of Internal States for Hallucination Detection of Large Language Models](https://arxiv.org/abs/2311.09398)
-  * **Metrics**: Hallucination detection accuracy and F1-score (token-level and response-level) on the new HELM benchmark; detection latency and throughput.
-  * **Datasets**: Wikipedia (used to extract pseudo training data); **HELM** (Hallucination Evaluation for multiple LLMs) – a benchmark with outputs from six different LLMs on Wikipedia-derived prompts, annotated with human labels for hallucinated content along with each model’s internal states.
-  * **Comments**: Introduces an *unsupervised, real-time* hallucination detection framework that taps into an LLM’s own hidden states. MIND leverages unannotated Wikipedia text to auto-generate training pairs (prompt, LLM output with hallucination label inferred) and trains a lightweight MLP to predict hallucinations from the model’s activations during inference. This approach avoids heavy external fact-checkers, greatly speeds up detection, and remains model-agnostic. On the HELM benchmark, MIND demonstrates strong hallucination detection performance while significantly reducing computational overhead compared to prior post-processing methods.
-
-
-
-
-
 ### [MARS: Meaning-Aware Response Scoring for Uncertainty Estimation in Generative LLMs](https://aclanthology.org/2024.acl-long.419.pdf)
 - **Metrics:** AUROC
 - **Datasets:** TriviaQA, NaturalQA, WebQA
