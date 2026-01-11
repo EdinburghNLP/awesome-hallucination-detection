@@ -22,6 +22,24 @@
 - **Datasets:** PsiloQA, RAG-Truth, Mu-SHROOM, FAVA, HalluEntity
 - **Comments:** Introduces **PsiloQA**, a large-scale dataset for **multilingual span-level hallucination detection** that serves both as a **benchmark** and a **training resource** for detector models. Building upon prior English-only and sequence-level datasets, **PsiloQA offers fine-grained supervision across 14 languages** through an automated three-stage pipeline of QA generation, hallucinated answer elicitation, and GPT-4o–based span annotation. It enables comprehensive evaluation and training of uncertainty-based, encoder-based, and LLM-based detectors, demonstrating strong cross-lingual generalization and cost-efficient scalability.
 
+### [Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment](https://arxiv.org/abs/2405.18654)
+
+- **Metrics:** CHAIRi, CHAIRs; AMBER (CHAIR, Cover, Hall. rate, F1); MME-Hall score
+- **Datasets:** MSCOCO (CHAIR), AMBER, MME-Hall, MMHal-Bench, HallusionBench
+- **Comments:** Introduces Data-augmented Phrase-level Alignment (DPA) and **HALVA**, which build hallucinated/correct response pairs via phrase-level augmentation and train with a phrase-level alignment loss to downweight hallucinated phrases. Reduces object hallucinations while preserving general vision-language performance across multiple benchmarks.
+
+### [MLLM Can See? Dynamic Correction Decoding for Hallucination Mitigation](https://arxiv.org/abs/2410.11779)
+
+- **Metrics:** CHAIRs, CHAIRi; POPE F1; MME score; AMBER (CHAIR, Cover, Hal, Cog)
+- **Datasets:** MSCOCO 2014 (captioning), POPE, MME, AMBER
+- **Comments:** Proposes **DeCo**, a model-agnostic decoding method that adaptively mixes earlier-layer representations to counteract language-prior suppression of visual evidence. Cuts object hallucinations across MLLMs with modest latency overhead and compatibility with standard decoding strategies.
+
+### [AVHBench: A Cross-Modal Hallucination Benchmark for Audio-Visual Large Language Models](https://arxiv.org/abs/2410.18325)
+
+- **Metrics:** Accuracy, Precision, Recall, F1 (judgment); METEOR, CIDEr, GAVIE (captioning)
+- **Datasets:** AVHBench (2,136 videos; 4 tasks: A->V, V->A, A-VMat, A-VCap; 5,302 QA pairs; 1,106 captions)
+- **Comments:** Introduces **AVHBench**, a cross-modal hallucination benchmark for audio-visual LLMs with three judgment tasks and one captioning task that probe audio/video grounding mismatches. Provides a curated dataset and evaluation protocol for both perception and comprehension.
+
 
 ### [Teaching with Lies: Curriculum DPO on Synthetic Negatives for Hallucination Detection](https://arxiv.org/abs/2505.17558v1)
 
