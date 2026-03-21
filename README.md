@@ -4,6 +4,12 @@
 
 ## Papers and Summaries
 
+### [DRIFT: Detecting Representational Inconsistencies for Factual Truthfulness](https://arxiv.org/abs/2601.14210)
+
+- **Metrics:** AUROC, AURAC, Accuracy
+- **Datasets:** TriviaQA, NQ-Open, MMLU-Pro, WebQuestions
+- **Comments:** Trains a lightweight probe (3M–37M params) on **intermediate hidden states** instead of final-layer outputs, since middle layers retain uncertainty signals that the token-projection step throws away. Two modes: **question-only** (runs before or alongside generation, no added latency) and **question+answer** (waits for the full response, more accurate). A built-in **LLM router** uses probe confidence to decide whether to return the answer or hand off to a stronger model / RAG. Beats **HaloScope** and **Semantic Entropy** on 10 of 12 model–dataset combinations (LLaMA-2, Qwen-2.5, Gemma-3 × four QA benchmarks), with up to 13-point AUROC gains. Probes trained on one dataset transfer to others without retraining (72–93 AUROC).
+
 ### [Joint Evaluation of Answer and Reasoning Consistency for Hallucination Detection in Large Reasoning Models](https://arxiv.org/abs/2506.04832)
 
 - **Metrics:** AUROC
