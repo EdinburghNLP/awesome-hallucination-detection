@@ -4,6 +4,111 @@
 
 ## Papers and Summaries
 
+### [The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models via Visual Information Steering](https://arxiv.org/abs/2502.03628)
+- **Metrics:** CHAIRs, CHAIRi, POPE Accuracy/F1, MMHal-Bench GPT-4 score, MME score
+- **Datasets:** MSCOCO 2014 (CHAIR, 500 images), POPE (COCO subset), MMHal-Bench (96 image-question pairs), MME
+- **Comments:** Introduces **VISTA**, a training-free inference-time framework that combats hallucination in LVLMs by steering visual information in the activation space. Reveals three phenomena during LVLM generation: gradual visual information loss, early excitation of semantically meaningful tokens, and hidden genuine information in vocabulary rankings. Reinforces visual grounding at inference time by leveraging early-layer logits, reducing hallucinations by ~40% across four architectures (LLaVA-1.5, MiniGPT-4, Shikra, InstructBLIP) under three decoding strategies. (ICML 2025)
+
+### [Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models](https://arxiv.org/abs/2410.03577)
+- **Metrics:** CHAIRs, CHAIRi, POPE Accuracy/F1, HallusionBench (fACC, qACC, aACC), MME, MMBench, MM-Vet, LLaVA-Bench, VizWiz-VQA
+- **Datasets:** POPE (MSCOCO, A-OKVQA, GQA), CHAIR, HallusionBench, MME, MMBench, MM-Vet, LLaVA-Bench, VizWiz-VQA
+- **Comments:** Proposes **MemVR**, a training-free decoding approach inspired by human cognition: when the model exhibits uncertainty during generation, visual tokens are reinjected as key-value memory through the Feed Forward Network, analogous to "looking twice" at an image when memory fades. Significantly reduces hallucinations while preserving general capabilities across eight benchmarks and multiple MLLM architectures (LLaVA-1.5, Qwen-VL, GLM4V). (ICML 2025)
+
+### [Robust Multimodal Large Language Models Against Modality Conflict](https://arxiv.org/abs/2507.07151)
+- **Metrics:** ROUGE-L F1, Hallucination Rate, LLM-Judge Score (0–4)
+- **Datasets:** MMMC (Multimodal Modality Conflict, 20K image-question-answer triples from Visual Genome), HallusionBench, MMBench, MMStar, MMMU, MathVista, OCRBench, AI2D, MMVet, MME
+- **Comments:** Formally defines **modality conflict**—where contradictions between visual and textual inputs trap MLLMs in a dilemma—as a primary driver of hallucinations. Introduces the **MMMC** dataset with object, attribute, and relationship conflicts, and evaluates three mitigation strategies: prompt engineering, supervised fine-tuning, and reinforcement learning. Finds that RL provides the most robust defense, training the model to prioritize visual evidence over misleading textual cues. (ICML 2025)
+
+### [GLSim: Detecting Object Hallucinations in LVLMs via Global-Local Similarity](https://arxiv.org/abs/2508.19972)
+- **Metrics:** AUROC, AUPR
+- **Datasets:** MSCOCO (5K validation images, 80 object classes), Objects365 (5K validation images, 365 object classes)
+- **Comments:** Proposes **GLSim**, a training-free hallucination detection framework that combines complementary global and local embedding similarity signals between image and text modalities. By extracting continuous hallucination likelihood scores from intermediate-layer embeddings, GLSim captures both contextual and fine-grained perspectives. Outperforms competitive baselines across multiple LVLMs (LLaVA-1.5, MiniGPT-4, Shikra, InstructBLIP, Qwen2.5-VL) without requiring external supervision or judge models. (NeurIPS 2025)
+
+### [Intervene-All-Paths: Unified Mitigation of LVLM Hallucinations across Alignment Formats](https://arxiv.org/abs/2511.17254)
+- **Metrics:** POPE Accuracy/F1, MCQ-POPE Accuracy/Macro-F1, CHAIRs, CHAIRi, MME (Existence, Count, Position, Color)
+- **Datasets:** POPE (COCO, A-OKVQA, GQA), MCQ-POPE, CHAIR (COCO), MME
+- **Comments:** Demonstrates that LVLM hallucinations stem from three interacting causal pathways: image-to-input-text, image-to-output-text, and text-to-text. Proposes a training-free, head-level intervention framework that identifies critical **hallucination heads** across all pathways and applies targeted corrections customized for different question-answer formats (yes/no, multiple-choice, open-ended). Achieves consistent hallucination reduction across diverse alignment types. (NeurIPS 2025)
+
+### [One SPACE to Rule Them All: Jointly Mitigating Factuality and Faithfulness Hallucinations in LLMs](https://arxiv.org/abs/2506.11088)
+- **Metrics:** TruthfulQA (MC1, MC2, Truthfulness, Informativeness, True*Info), PDTB DISQ Score (Targeted, Counterfactual, Consistency, Overall)
+- **Datasets:** TruthfulQA, PDTB (Penn Discourse TreeBank)
+- **Comments:** Exposes a critical zero-sum dynamic: interventions targeting factuality often degrade faithfulness, and vice versa. **SPACE** resolves this by showing that both hallucination types share overlapping subspaces within neural representations. Uses dual-task feature modeling, spectral clustering, and attention head saliency scoring to identify and edit shared activation subspaces, enabling concurrent mitigation of both hallucination types without sacrificing instruction-following capability. (NeurIPS 2025)
+
+### [Reasoning Models Hallucinate More: Factuality-Aware Reinforcement Learning for Large Reasoning Models](https://arxiv.org/abs/2505.24630)
+- **Metrics:** Pass@1 Accuracy (reasoning), Truthfulness ratio (TruthfulQA), Accuracy (HaluEval-QA), Truthfulness ratio (HalluQA)
+- **Datasets:** TruthfulQA (817 samples), HaluEval-QA (10K samples), HalluQA (450 samples), GSM8K (1,319 samples), MATH-500, AIME 2024, AIME 2025
+- **Comments:** Reveals that reasoning models (using CoT) actually hallucinate **more** than base models on complex factual questions, as extended generation provides more surface area for factuality drift. Introduces **FSPO** (Factuality-aware Step-wise Policy Optimization), an RL fine-tuning algorithm that incorporates explicit factuality verification at each reasoning step, dynamically adjusting token-level advantage values to maintain factual correctness throughout the reasoning trace. (NeurIPS 2025)
+
+### [The Illusion of Progress: Re-evaluating Hallucination Detection in LLMs](https://aclanthology.org/2025.emnlp-main.1761/)
+- **Metrics:** AUROC, PR-AUC, Precision, Recall, F1, ROUGE-L F1
+- **Datasets:** NQ-Open (3,610 QA pairs), TriviaQA (3,842 examples), SQuADv2 (4,150 examples)
+- **Comments:** Demonstrates that ROUGE-based evaluation systematically overestimates hallucination detection performance in QA. Through comprehensive human studies, shows that ROUGE exhibits alarmingly low precision, and several established detection methods (Perplexity, EigenScore, eRank) suffer performance drops of up to **45.9% AUROC** when evaluated with human-aligned LLM-as-Judge metrics instead of ROUGE. Reveals that simple length-based heuristics can match or exceed sophisticated detectors like Semantic Entropy, exposing a fundamental flaw in current evaluation practices. (EMNLP 2025)
+
+### [Bold Claims or Self-Doubt? Factuality Hallucination Type Detection via Belief State](https://aclanthology.org/2025.findings-emnlp.527/)
+- **Metrics:** Truthful Rate, OH (Overconfident Hallucination detection rate), UH (Unaware Hallucination detection rate), AUC
+- **Datasets:** TriviaQA, NQOPEN, ALCUNA
+- **Comments:** Introduces the concept of **belief state**—a measure of model confidence based on answer repetition consistency across multiple samples—to categorize factuality hallucinations into two types: **Overconfident** (model confidently lies) and **Unaware** (model guesses due to missing knowledge). Proposes **BAFH**, a lightweight framework that trains a feedforward classifier on hidden states to determine belief states and classify hallucination types. Evaluated across eight LLMs (Gemma-2, Llama-3.1, Mistral) against MIND and SAR baselines. (EMNLP 2025 Findings)
+
+### [Exploring the Generalizability of Factual Hallucination Mitigation via Enhancing Precise Knowledge Utilization](https://aclanthology.org/2025.findings-emnlp.211/)
+- **Metrics:** Accuracy across 21 domains
+- **Datasets:** FactualBench (181K Chinese factual QA pairs spanning 21 domains)
+- **Comments:** Proposes **PKUE**, which mitigates factual hallucinations by strengthening the LLM's internal mapping between queries and parametric knowledge. Fine-tunes the model on self-generated responses to precise factual questions via preference optimization, rather than using post-hoc corrections that may overfit to specific prompt templates. Introduces **FactualBench**, a large-scale Chinese factual QA dataset, and demonstrates broad generalization across factual tasks, general tasks, and multilingual settings. (EMNLP 2025 Findings)
+
+### [Towards Faithful Natural Language Explanations: A Study Using Activation Patching in Large Language Models](https://aclanthology.org/2025.emnlp-main.529/)
+- **Metrics:** Accuracy, CaF (Causal Faithfulness, with variants CaF(M), CaF(T), CaF(L)), CC-SHAP, CFF (Counterfactual Faithfulness), Plausibility
+- **Datasets:** CoS-E (Commonsense Reasoning), e-SNLI (Natural Language Inference), ComVE (Commonsense Validation and Explanation)
+- **Comments:** Introduces **Causal Faithfulness (CaF)**, a metric that uses activation patching to measure the divergence between the causal effects underlying the model's answer and its natural language explanation. Unlike prior faithfulness tests based on input perturbations (which are prone to out-of-distribution issues), CaF operates on internal hidden states via Symmetric Token Replacement. Finds that alignment-tuned models produce more faithful explanations than base models, and that faithfulness and plausibility are positively correlated. Evaluates six Gemma-2 models (2B–27B). (EMNLP 2025)
+
+### [InteGround: On the Evaluation of Verification and Retrieval Planning in Integrative Grounding](https://aclanthology.org/2025.findings-emnlp.732/)
+- **Metrics:** Accuracy, Groundedness verification scores
+- **Datasets:** Data repurposed from four domains (claim verification, multi-hop QA)
+- **Comments:** Introduces **integrative grounding**, a task requiring LLMs to retrieve and verify multiple interdependent pieces of evidence for complex queries. Finds that when external information is incomplete, LLMs default to hallucinating rationalizations using internal knowledge. Shows that premise abduction with logical constraints and zero-shot self-reflection outperform undirected retrieval planning in constraining hallucination cascades in complex RAG scenarios. (EMNLP 2025 Findings)
+
+### [Hallucination Detection in LLMs Using Spectral Features of Attention Maps](https://arxiv.org/abs/2502.17598)
+- **Metrics:** AUROC, Precision, Recall, Cohen's Kappa
+- **Datasets:** NQ-Open, TriviaQA, CoQA, SQuADv2, HaluEval-QA, TruthfulQA, GSM8K
+- **Comments:** Approaches the LLM as a dynamic graph and analyzes structural properties of internal attention mechanisms. Extracts **spectral features** (eigenvalues) from attention maps to predict when the model is fabricating information: factual retrieval produces stable eigen-structures, while hallucination leads to diffuse, chaotic patterns. Creates a white-box hallucination detector that operates independently of the generated semantic content, evaluated across seven QA benchmarks. (EMNLP 2025)
+
+### [PruneCD: Contrasting Pruned Self Model to Improve Decoding Factuality](https://arxiv.org/abs/2509.16598)
+- **Metrics:** TruthfulQA (MC1, MC2, %Truth, %Info), FACTOR, StrategyQA Accuracy
+- **Datasets:** TruthfulQA, FACTOR (News, Wiki), StrategyQA
+- **Comments:** Addresses limitations of early-exit contrastive decoding by constructing the "amateur" model via **dynamic layer pruning** rather than simple truncation. Removing specific intermediate reasoning layers produces a better-calibrated contrastive prior with more informative logits, steering generation away from factually incorrect but high-probability tokens while maintaining fluency. Achieves consistent factuality improvements with minimal inference overhead. (EMNLP 2025)
+
+### [Re-FRAME the Meeting Summarization SCOPE: Fact-Based Summarization and Personalization via Questions](https://arxiv.org/abs/2509.15901)
+- **Metrics:** ROUGE (R-1, R-2, R-L), BERTScore F1, MESA (8 dimensions including hallucination), P-MESA (7 personalization dimensions), Balanced Accuracy, Cohen's kappa
+- **Datasets:** QMSum (ICSI, AMI, WPCP meetings), FAME (500 English, 300 German synthetic meetings)
+- **Comments:** Tackles meeting-summary hallucinations by introducing the **FRAME** pipeline and **SCOPE** protocol. FRAME extracts salient facts and scores them thematically; SCOPE forces the model to structurally justify context selection via a nine-question reasoning trace before generating the summary. Introduces **P-MESA**, a multi-dimensional personalized evaluation framework, and shows that on QMSum and FAME, FRAME reduces hallucination and omission by 2 out of 5 points on MESA, while SCOPE improves knowledge fit and goal alignment over prompt-only baselines. (EMNLP 2025 Findings)
+
+### [CCHall: A Novel Benchmark for Joint Cross-Lingual and Cross-Modal Hallucinations Detection in Large Language Models](https://arxiv.org/abs/2505.19108)
+- **Metrics:** Accuracy, Macro-F1
+- **Datasets:** CCHall (built from AMBER, GQA, XM3600, xFlickr&Co; 9 languages across 3 resource levels: high—French, Spanish, Portuguese; medium—Czech, Dutch, Swedish; low—Croatian, Welsh, Swahili)
+- **Comments:** Introduces **CCHall**, the first benchmark for the joint intersection of **cross-lingual and cross-modal hallucinations**. Evaluates leading models (GPT-4o, Gemini-1.5, Llama-3.2-Vision) in scenarios where a model might correctly identify an object visually in English but hallucinate its properties when generating in another language. Categorizes hallucinations into four types: non-hallucination, cross-lingual only, cross-modal only, and joint cross-lingual/cross-modal. (ACL 2025)
+
+### [Hallucination Detox: Sensitivity Dropout (SenD) for Large Language Model Training](https://arxiv.org/abs/2410.15460)
+- **Metrics:** SelfCheckGPT, FactScore, EigenScore, Efficient EigenScore (EES), Semantic Entropy, Perplexity, HaluEval Accuracy, ROUGE-1 (XSum)
+- **Datasets:** HELM (50K Wikipedia articles), MedHALT, LegalBench, HaluEval, XSum
+- **Comments:** Proposes **Sensitivity Dropout (SenD)**, a training protocol that reduces hallucination variance by deterministically dropping sensitive embedding indices with high variability during training. Pairs this intervention with **Efficient EigenScore (EES)**, an unsupervised metric that approximates EigenScore at 2x speed. Improves test-time reliability and factual accuracy across Pythia and Llama models without hurting downstream task performance. (ACL 2025)
+
+### [ETF: An Entity Tracing Framework for Hallucination Detection in Code Summaries](https://arxiv.org/abs/2410.14748)
+- **Metrics:** Precision, Recall, F1, Accuracy (instance-level and entity-level), Jaccard Similarity
+- **Datasets:** Custom dataset (411 summaries from 7 LLMs, 9,933 entity-level samples, sourced from CodeXGLUE Java Code-To-Text)
+- **Comments:** Introduces **ETF**, the first hallucination detection framework tailored for **code summarization**. Detects intrinsic and extrinsic hallucinations by tracing code entities (variables, methods, classes) from source code to generated summaries using static analysis principles. Identifies fabricated entities (extrinsic hallucinations) and incorrect entity attributions (intrinsic hallucinations). Provides a novel annotated dataset with 4,354 human-reviewed entity tuples (Cohen's Kappa: 0.72). (ACL 2025)
+
+### [Localizing and Mitigating Errors in Long-form Question Answering](https://arxiv.org/abs/2407.11930)
+- **Metrics:** Human preference rate, span-level error annotation (5 error types)
+- **Datasets:** HaluQuestQA (698 QA pairs, 1.8K span-level expert annotations)
+- **Comments:** Introduces **HaluQuestQA**, a dataset with expert span-level annotations of specific hallucination and omission errors in complex long-form QA answers. Trains an automated feedback model on these annotations to detect problematic spans, then applies **Error-Informed Refinement** to rewrite hallucinated or incomplete spans. Achieves an **84% human preference rate** over baseline generations. (ACL 2025 Findings)
+
+### [Can Hallucination Correction Improve Video-Language Alignment?](https://arxiv.org/abs/2502.15079)
+- **Metrics:** Accuracy (VELOCITI), Mean Average Precision (SSv2-Temporal, SSv2-Events), GPT-Evaluated Score (MSRVTT-QA)
+- **Datasets:** VELOCITI, SSv2-Temporal, SSv2-Events, MSRVTT-QA, VideoCon (115K training triplets)
+- **Comments:** Flips the traditional mitigation paradigm by leveraging **hallucination correction as a self-training objective** to actively improve video-language alignment. The **HACA** framework learns to identify and rewrite hallucinated spatial and temporal descriptions during self-training, treating hallucinations as informative training signals rather than noise. Leads to significant improvements in zero-shot video-caption binding and complex text-to-video retrieval. (ACL 2025 Findings)
+
+### [Monitoring Decoding: Mitigating Hallucination via Evaluating the Factuality of Partial Response during Generation](https://arxiv.org/abs/2503.03106)
+- **Metrics:** Exact Match (TriviaQA, NQ-Open), Truth/Info/Truth×Info scores (TruthfulQA), Accuracy (GSM8K), Latency (ms/token), Throughput (token/s)
+- **Datasets:** TruthfulQA (817 questions), TriviaQA (1,200 samples), NQ-Open (1,000 samples), GSM8K (1,319 samples)
+- **Comments:** Introduces a real-time, token-by-token monitoring framework that continuously scores the factuality of the partial response during generation. When an imminent hallucination is detected mid-generation, the decoding trajectory is dynamically altered to enforce factual consistency, addressing the **snowballing** effect where a single incorrect token forces subsequent fabrications. Shifts the paradigm from post-generation correction to active preventative decoding. (ACL 2025 Findings)
+
 ### [DRIFT: Detecting Representational Inconsistencies for Factual Truthfulness](https://arxiv.org/abs/2601.14210)
 
 - **Metrics:** AUROC, AURAC, Accuracy
