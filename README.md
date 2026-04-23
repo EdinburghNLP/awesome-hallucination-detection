@@ -1,8 +1,14 @@
 # awesome-hallucination-detection
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection) [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection/pulls) [![Papers](https://img.shields.io/badge/Papers-139-blue.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection) [![Maintained](https://img.shields.io/badge/Maintained-yes-green.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection) [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection/pulls) [![Papers](https://img.shields.io/badge/Papers-140-blue.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection) [![Maintained](https://img.shields.io/badge/Maintained-yes-green.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection)
 
 ## Papers and Summaries
+
+### [Cognometry v0: 8-Benchmark Cross-Validated Hallucination Detection in Production LLMs](https://doi.org/10.5281/zenodo.19703527)
+- **Metrics:** AUC (held-out test, 3-seed averaged)
+- **Datasets:** HaluEval-QA, HaluEval-Dialog, HaluEval-Summarization, TruthfulQA, HaluBench-DROP, HaluBench-PubMedQA, HaluBench-FinanceBench, HaluBench-RAGTruth
+- **Comments:** Introduces **cognometry** as the empirical measurement of cognitive states in LLMs. Ships a 9-signal pooled LR (text claim risk, entity verification, knowledge grounding, four response-novelty variants, NLI contradiction via DeBERTa-v3-base-mnli-fever-anli) cross-validated on 8 public benchmarks. Achieves AUC **0.998** on HaluEval-QA and **0.994** on TruthfulQA, with below-chance results on HaluBench-DROP (0.424) and FinanceBench (0.492) declared openly as **documented failure modes** in the weights module itself — DROP because extractive-span errors pass NLI entailment, FinanceBench because arithmetic errors on verbatim-copied numbers pass novelty. First open-source hallucination detector cross-validated at this breadth in the literature. Ships as `pip install styxx[nli]` + `@trust` decorator. 591 tests, 3-seed reproducer committed. MIT code, CC-BY-4.0 calibrated weights. Companion manifesto defines three falsifiable laws of cognometry (vitals exist, transfer, are causally actionable) with cross-validated numerical support. (Zenodo 2026)
+
 
 ### [The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models via Visual Information Steering](https://arxiv.org/abs/2502.03628)
 - **Metrics:** CHAIRs, CHAIRi, POPE Accuracy/F1, MMHal-Bench GPT-4 score, MME score
