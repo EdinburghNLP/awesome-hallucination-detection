@@ -4,6 +4,12 @@
 
 ## Papers and Summaries
 
+### [QuCo-RAG: Quantifying Uncertainty from the Pre-training Corpus for Dynamic Retrieval-Augmented Generation](https://arxiv.org/abs/2512.19134)
+- **Metrics:** Exact Match (EM), token-level F1
+- **Datasets:** HotpotQA, 2WikiMultihopQA, ASQA (long-form), PubMedQA (biomedical)
+- **Comments:** Proposes **QuCo-RAG**, a dynamic RAG framework that determines *when* to retrieve by quantifying uncertainty from **objective pre-training-corpus statistics** rather than ill-calibrated model-internal signals (logits, entropy). Two-stage detection: (1) *Pre-Generation Knowledge Assessment* — queries entity frequencies in the pre-training corpus and triggers retrieval when entities are low-frequency (long-tail knowledge risk); (2) *Runtime Claim Verification* — extracts knowledge triplets from each generated sentence and verifies entity co-occurrence in the corpus, where zero co-occurrence triggers retrieval and regeneration. Both stages leverage **Infini-gram** for millisecond-latency queries over a 4-trillion-token corpus. On OLMo-2 (7B/13B/32B, matched corpus), achieves **+5–12 EM** over state-of-the-art dynamic-RAG baselines including DRAGIN. Cross-model transfer to Llama-3, Qwen2.5, GPT-4.1, and GPT-5-chat — which have undisclosed pre-training data — yields **up to +14 EM** by exploiting web-scale corpus overlap. Best performance on ASQA long-form QA and PubMedQA, while internal-signal methods show limitations in either efficiency or effectiveness. Code at https://github.com/ZhishanQ/QuCo-RAG. (Findings of ACL 2026)
+
+
 ### [Cognometry v0: 8-Benchmark Cross-Validated Hallucination Detection in Production LLMs](https://doi.org/10.5281/zenodo.19703527)
 - **Metrics:** AUC (held-out test, 3-seed averaged)
 - **Datasets:** HaluEval-QA, HaluEval-Dialog, HaluEval-Summarization, TruthfulQA, HaluBench-DROP, HaluBench-PubMedQA, HaluBench-FinanceBench, HaluBench-RAGTruth
