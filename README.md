@@ -5,6 +5,11 @@
 ## Papers and Summaries
 
 
+### [Verifiable Rewards Beyond Math and Code: Lightweight Corpus-Grounded Process Supervision for Factual Question Answering](https://arxiv.org/abs/2605.29648)
+- **Metrics:** Exact Match (EM); training cost / wall-clock speedup (×) vs. neural-verifier baselines
+- **Datasets:** Five knowledge-intensive / factual QA benchmarks (incl. TriviaQA; 30 model×benchmark cells over six 3B–14B instruction-tuned models)
+- **Comments:** Proposes **CorVer** (Corpus Verify), a lightweight, plug-in *process reward* for RL fine-tuning (**GRPO**) of LLMs on factual QA that replaces neural verifiers (NLI, LLM-as-judge, retrieve-and-grade) with a **corpus-grounded** signal derived from **Wikipedia co-occurrence counts**. A small (0.5B) extractor turns each generated sentence into entity/claim spans whose corpus co-occurrence — queried via an **Infini-gram** index — yields sentence-level credit, which is mapped to **token-level advantages** and combined with response-level judge and format rewards in a GRPO update. Beats the raw baseline in every one of 30 cells (six instruction-tuned models, 3B–14B; five QA benchmarks), with an average **+4.1 EM on TriviaQA**, and outperforms four neural-verifier baselines in 18/20 cells at **4.8–8.4× lower training cost**. Code at https://github.com/shichengf/CorVer. (arXiv 2026)
+
 ### [REFUTE: Scientific Critique & Epistemic Calibration Benchmark](https://huggingface.co/datasets/BGPT-OFFICIAL/refute)
 - **Metrics:** Critique skill score, Brier calibration, forced-choice flaw accuracy, planted-flaw soundness accuracy, missing-evidence refusal rate
 - **Datasets:** REFUTE (`refute_hard_60`, `refute_120`, `refute_soundness`; 120 critique + 74 soundness vignettes from recent science paper summaries)
