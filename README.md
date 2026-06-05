@@ -4,6 +4,12 @@
 
 ## Papers and Summaries
 
+
+### [REFUTE: Scientific Critique & Epistemic Calibration Benchmark](https://huggingface.co/datasets/BGPT-OFFICIAL/refute)
+- **Metrics:** Critique skill score, Brier calibration, forced-choice flaw accuracy, planted-flaw soundness accuracy, missing-evidence refusal rate
+- **Datasets:** REFUTE (`refute_hard_60`, `refute_120`, `refute_soundness`; 120 critique + 74 soundness vignettes from recent science paper summaries)
+- **Comments:** Open Apache-2.0 Hugging Face benchmark from BGPT measuring whether LLMs critique recent science summaries with calibrated, evidence-grounded judgment. Separates critique skill from uncertainty honesty: strongest critics are often most overconfident when evidence is weak. Includes judge-free Inspect AI and lm-evaluation-harness adapters plus a technical report. Complements factuality/hallucination detection benchmarks by testing overclaim correction and missing-evidence refusal on scientific summaries. ([Technical report](https://huggingface.co/datasets/BGPT-OFFICIAL/refute/blob/main/TECHNICAL_REPORT.md), [Leaderboard](https://huggingface.co/spaces/BGPT-OFFICIAL/refute-leaderboard)) (2026)
+
 ### [QuCo-RAG: Quantifying Uncertainty from the Pre-training Corpus for Dynamic Retrieval-Augmented Generation](https://arxiv.org/abs/2512.19134)
 - **Metrics:** Exact Match (EM), token-level F1
 - **Datasets:** HotpotQA, 2WikiMultihopQA, ASQA (long-form), PubMedQA (biomedical)
