@@ -5,6 +5,11 @@
 ## Papers and Summaries
 
 
+### [Nutrient Grounding: Cross-Encoder Faithfulness Scoring with a Number-Grounding Benchmark](https://huggingface.co/datasets/nutrientdocs/grounding-benchmark)
+- **Metrics:** ROC-AUC, overall and per claim type (numbers / dates / prose); English (N=5,000) and multilingual (N=8,421; 40 languages)
+- **Datasets:** grounding-benchmark (CC-BY-SA): claim↔source entailment pairs for factual grounding, with a dedicated number/table-grounding split
+- **Comments:** Cross-encoder models that score whether an LLM claim is entailed by its source document, aimed at the human-review / verification step of RAG and agent pipelines. The notable finding is a **number-grounding gap**: general NLI models (DeBERTa / BART / RoBERTa / XLM-R) reach only ~0.45–0.66 ROC-AUC on numbers-in-tables, while the grounding models reach ~0.92–0.97 — dates and prose are easy for every model, but numbers are where faithfulness detection breaks, which matters for financial and contractual documents. Ships an open English model (`grounding-en`, 0.4B, Apache-2.0) plus a closed multilingual variant; 8,192-token context so table rows are not truncated. Open benchmark and self-service leaderboard (score any model, submit via PR). ([Model](https://huggingface.co/nutrientdocs/grounding-en), [Leaderboard](https://huggingface.co/spaces/nutrientdocs/grounding-leaderboard)) (2026)
+
 ### [Verifiable Rewards Beyond Math and Code: Lightweight Corpus-Grounded Process Supervision for Factual Question Answering](https://arxiv.org/abs/2605.29648)
 - **Metrics:** Exact Match (EM); training cost / wall-clock speedup (×) vs. neural-verifier baselines
 - **Datasets:** Five knowledge-intensive / factual QA benchmarks (incl. TriviaQA; 30 model×benchmark cells over six 3B–14B instruction-tuned models)
