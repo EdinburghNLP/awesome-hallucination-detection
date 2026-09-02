@@ -5,6 +5,11 @@
 ## Papers and Summaries
 
 
+### [Fabrication on absent fields: a pre-registered six-arm document-extraction bake-off](https://velrim.com/research/fabrication-on-absent-fields)
+- **Metrics:** Fabrication rate on absent fields (share of gold-null fields returned with a value); per-field F1; confidence-vs-accuracy calibration gap
+- **Datasets:** 124 real documents / 2,102 labeled fields / 319 pages from CORD-v2 receipts, DeepForm FCC invoices, VRDU ad-buy contracts and registration forms (corpora, raw outputs and request IDs in the repo)
+- **Comments:** Pre-registered (rules frozen and committed publicly before the first paid call) six-arm comparison of Gemini 2.5 Flash (free-decode, constrained), GPT-5.4-mini (free-decode, structured), Mistral Document AI OCR and Velrim on how often extraction systems invent values for fields not present in the document: 10-17% for the LLM arms, 40% for the OCR arm, 17% pooled. Reports that a per-field confidence score ranks the system's own fabrications low (mean 0.40 vs 0.64 overall). Eval CLI `velrim-eval` (Apache-2.0), corpora, raw outputs and figures at https://github.com/velrimhq/velrim-eval; DOI https://doi.org/10.5281/zenodo.22233430. (Zenodo 2026)
+
 ### [Verifiable Rewards Beyond Math and Code: Lightweight Corpus-Grounded Process Supervision for Factual Question Answering](https://arxiv.org/abs/2605.29648)
 - **Metrics:** Exact Match (EM); training cost / wall-clock speedup (×) vs. neural-verifier baselines
 - **Datasets:** Five knowledge-intensive / factual QA benchmarks (incl. TriviaQA; 30 model×benchmark cells over six 3B–14B instruction-tuned models)
