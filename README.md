@@ -4,6 +4,11 @@
 
 ## Papers and Summaries
 
+### [Enoki: Efficient Multi-Level Hallucination Detection](https://huggingface.co/papers/2609.00581)
+- **Metrics:** AUROC, AUPRC, Span Coverage F1, FLOPs.
+- **Datasets:** EnokiQA, HalluEntity, MuSHROOM, RAGTruth, PsiloQA, FactCheckBench, ANAH.
+- **Comments:** Introduces **Enoki**, an Open Information Extraction (OpenIE) framework for multi-granular hallucination detection that unifies claim-level verification and span-level localization through text-anchored relational facts, eliminating the need for separate claim-to-span alignment. Enoki provides three fact extraction approaches: (1) [**Enoki-Encoder**](https://huggingface.co/s-nlp/enoki-openie-encoder), a ModernBERT-based extractor trained with Iterative Grid Labeling (IGL) and permutation-invariant Hungarian matching to directly extract relational triples without autoregressive decoding, distilling an LLM-based extractor into an efficient encoder; (2) **Enoki-LLM**, an LLM-based OpenIE approach with incremental fact decomposition for precise localization; and (3) **Enoki-Rule**, a deterministic dependency-based extractor enhanced through agent-assisted rule evolution with automated validation. The framework demonstrates strong fine-grained hallucination detection performance and reports **FLOPs-based computational cost alongside latency**, enabling accuracy–efficiency comparisons across extraction approaches. The paper also introduces [**EnokiQA**](https://huggingface.co/datasets/s-nlp/EnokiQA), a long-form QA dataset with 3,990 labeled examples containing aligned claim-level and span-level hallucination annotations, plus 19,594 unlabeled examples. ([Code](https://github.com/s-nlp/Enoki)) (2026)
+
 
 ### [Verifiable Rewards Beyond Math and Code: Lightweight Corpus-Grounded Process Supervision for Factual Question Answering](https://arxiv.org/abs/2605.29648)
 - **Metrics:** Exact Match (EM); training cost / wall-clock speedup (×) vs. neural-verifier baselines
