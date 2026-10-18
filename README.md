@@ -4,6 +4,11 @@
 
 ## Papers and Summaries
 
+### [ParamMute: Suppressing Knowledge-Critical FFNs for Faithful Retrieval-Augmented Generation](https://arxiv.org/abs/2502.15543)
+- **Metrics:** Context Recall (ConR), Memory Recall (MemR), Memorization Ratio (MR = MemR / (MemR + ConR))
+- **Datasets:** CoFaithfulQA (released on HF as CoConflictQA), ConFiQA, FaithEval
+- **Comments:** Studies *unfaithful* RAG generation, where outputs contradict relevant and accurate retrieved context because internal parametric knowledge dominates. Activation analysis identifies a subset of **mid-to-deep FFN layers** that are disproportionately activated in unfaithful responses (unfaithfulness-associated FFNs), and suppressing them causally reduces reliance on parametric memory. Proposes **ParamMute**, which suppresses these FFNs and calibrates the model toward retrieved knowledge, and introduces **CoFaithfulQA**, a benchmark of conflicts between internal knowledge and accurate external evidence. ParamMute substantially improves faithfulness on CoFaithfulQA and ConFiQA. ([Code](https://github.com/OpenBMB/ParamMute)) (NeurIPS 2025)
+
 ### [Enoki: Efficient Multi-Level Hallucination Detection](https://huggingface.co/papers/2609.00581)
 - **Metrics:** AUROC, AUPRC, Span Coverage F1, FLOPs.
 - **Datasets:** EnokiQA, HalluEntity, MuSHROOM, RAGTruth, PsiloQA, FactCheckBench, ANAH.
