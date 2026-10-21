@@ -1,8 +1,18 @@
 # awesome-hallucination-detection
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection) [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection/pulls) [![Papers](https://img.shields.io/badge/Papers-140-blue.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection) [![Maintained](https://img.shields.io/badge/Maintained-yes-green.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection) [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection/pulls) [![Papers](https://img.shields.io/badge/Papers-145-blue.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection) [![Maintained](https://img.shields.io/badge/Maintained-yes-green.svg)](https://github.com/EdinburghNLP/awesome-hallucination-detection)
 
 ## Papers and Summaries
+
+### [INTRYGUE: Induction-Aware Entropy Gating for Reliable RAG Uncertainty Estimation](https://arxiv.org/abs/2603.21607)
+- **Metrics:** AUROC, inference time
+- **Datasets:** RAGTruth (MS MARCO long-form QA and CNN/DM summarization), CoQA, XSum
+- **Comments:** Shows that predictive entropy can produce false uncertainty alarms in RAG because induction heads have two opposing effects: they causally support context-grounded answers, but also co-activate entropy neurons that inflate predictive entropy. Introduces **INTRYGUE**, a training-free method that gates predictive entropy with an attention-based estimate of induction-head activity. Across four RAG-style benchmarks and six open-source LLMs (4B–13B), INTRYGUE matches or outperforms strong information- and sampling-based uncertainty baselines in most settings, with relative AUROC gains of up to **7.8%** over the next-best baseline and runtime comparable to standard predictive entropy. ([Code](https://github.com/kuleshovaai/intrygue)) (EMNLP 2026 Oral)
+
+### [Hallucination Detection in LLMs with Topological Divergence on Attention Graphs](https://aclanthology.org/2026.acl-long.704/)
+- **Metrics:** AUROC, inference time
+- **Datasets:** RAGTruth (MS MARCO long-form QA and CNN/DM summarization), CoQA, SQuAD, XSum
+- **Comments:** Introduces **TOHA** (TOpology-based HAllucination detector), which represents attention maps as weighted graphs and measures Manifold Topology Divergence (**MTop-Div**) between response and prompt subgraphs. A small probe set identifies hallucination-aware attention heads whose topology-based scores transfer across datasets and models. These heads are often also among the model's strongest induction (token-copying) heads; using only the top copying heads yields a competitive fully unsupervised variant that requires no annotated hallucination data. Across question-answering and summarization tasks and five open-source LLMs, TOHA achieves state-of-the-art or competitive hallucination-detection performance while requiring little labeled data and computational overhead. ([Code](https://github.com/sb-ai-lab/TOHA)) (ACL 2026)
 
 ### [ParamMute: Suppressing Knowledge-Critical FFNs for Faithful Retrieval-Augmented Generation](https://arxiv.org/abs/2502.15543)
 - **Metrics:** Context Recall (ConR), Memory Recall (MemR), Memorization Ratio (MR = MemR / (MemR + ConR))
