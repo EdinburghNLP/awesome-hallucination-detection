@@ -4,6 +4,11 @@
 
 ## Papers and Summaries
 
+### [SPARK: Adaptive Parametric Knowledge Participation for Faithful Retrieval-Augmented Generation](https://arxiv.org/abs/2606.27786)
+- **Metrics:** Token-level F1 (MRQA), Exact Match (ConFiQA), MMLU accuracy (general capability)
+- **Datasets:** MRQA (HotpotQA, SearchQA, NewsQA, NQ, TriviaQA, SQuAD), ConFiQA (QA, MR, MC), MMLU
+- **Comments:** Targets *unfaithful* RAG generation caused by context–memory knowledge conflicts, where the LLM falls back on inconsistent parametric knowledge instead of the retrieved evidence. Rather than localizing and editing knowledge-related parameters, **SPARK** treats parametric knowledge control as a latent *participation policy*: a lightweight policy (~0.01% extra parameters) adaptively scales the contribution of every FFN sublayer at each decoding step while the backbone stays frozen. The policy is trained with reinforcement learning using a faithfulness-oriented reward. Improves faithfulness over decoding-intervention and fine-tuning baselines on Qwen3-1.7B/8B while preserving general capabilities. Code: [OpenBMB/SHIFT](https://github.com/OpenBMB/SHIFT).
+
 ### [INTRYGUE: Induction-Aware Entropy Gating for Reliable RAG Uncertainty Estimation](https://arxiv.org/abs/2603.21607)
 - **Metrics:** AUROC, inference time
 - **Datasets:** RAGTruth (MS MARCO long-form QA and CNN/DM summarization), CoQA, XSum
