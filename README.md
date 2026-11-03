@@ -737,6 +737,7 @@ This framework consists of three components: Self-Evaluation, Internal Consisten
 - [TofuEval: Evaluating Hallucinations of LLMs on Topic-Focused Dialogue Summarization](https://arxiv.org/abs/2402.13249)
 - [UQLM: Uncertainty Quantification for Language Models](https://github.com/cvs-health/uqlm)
 - [LongTracer](https://github.com/ENDEVSOLS/LongTracer) - Open-source RAG hallucination detection SDK. Verifies LLM claims against source documents using hybrid STS + NLI, with pluggable backends and LangChain/LlamaIndex/Haystack adapters.
+- [RAGTruth++: Enhanced hallucination detection benchmark](https://blueguardrails.com/en/blog/ragtruth-plus-plus-enhanced-hallucination-detection-benchmark) - Re-annotated subset of RAGTruth with 408 prompt-response pairs and 865 hallucination spans, combining automated detection with independent review by two human annotators and adjudication. [Dataset](https://huggingface.co/datasets/blue-guardrails/ragtruth-plus-plus).
 
 
 ## Open Source Models for Measuring Hallucinations
