@@ -4,6 +4,11 @@
 
 ## Papers and Summaries
 
+### [TriLens: Per-Layer Logit-Lens Entropy for White-Box Hallucination Detection](https://aclanthology.org/2026.findings-emnlp.1803/)
+- **Metrics:** AUROC
+- **Datasets:** HaluEval-QA, SQuAD2.0, HotpotQA, TriviaQA
+- **Comments:** A white-box hallucination detector that records logit-lens entropy from self-attention outputs, feed-forward outputs, and residual streams at every decoder layer. The resulting 3L-dimensional representation is used by lightweight supervised probes, without sampling multiple generations or retaining high-dimensional hidden states as probe features. Evaluated on four English QA benchmarks. ([Code](https://github.com/TosakaUCW/TriLens)) (EMNLP 2026 Findings)
+
 ### [SPARK: Adaptive Parametric Knowledge Participation for Faithful Retrieval-Augmented Generation](https://arxiv.org/abs/2606.27786)
 - **Metrics:** Token-level F1 (MRQA), Exact Match (ConFiQA), MMLU accuracy (general capability)
 - **Datasets:** MRQA (HotpotQA, SearchQA, NewsQA, NQ, TriviaQA, SQuAD), ConFiQA (QA, MR, MC), MMLU
